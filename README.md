@@ -7,6 +7,7 @@ A responsive static website for client review.
 - `index.html` — Home
 - `about.html` — About Us
 - `services.html` — Services
+- `insights.html` — News and articles
 - `contact.html` — Let’s Talk
 - `site.css` — Shared styling
 
