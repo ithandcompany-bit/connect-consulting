@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" fill="none">
+  <defs>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".24" stop-color="#fff" stop-opacity=".3"/>
+      <stop offset=".48" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="fade-mask"><rect width="1000" height="650" fill="url(#fade)"/></mask>
+  </defs>
+  <g mask="url(#fade-mask)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M112 518h152v-72h150v-82h150v-85h150v-93h150" stroke="#7dcac1" stroke-opacity=".6" stroke-width="2"/>
+    <path d="M112 518h152v-72h150v-82h150v-85h150v-93h150v-65" stroke="#d9b66f" stroke-width="5"/>
+    <path d="M264 518v-72h150v-82h150v-85h150v-93h150" fill="#55b8ae" fill-opacity=".1"/>
+    <path d="M112 518h152v-72h150v-82h150v-85h150v-93h150" stroke="#7dcac1" stroke-opacity=".75" stroke-width="2"/>
+    <circle cx="264" cy="446" r="8" fill="#65c6bc"/>
+    <circle cx="414" cy="364" r="8" fill="#65c6bc"/>
+    <circle cx="564" cy="279" r="8" fill="#65c6bc"/>
+    <circle cx="714" cy="186" r="8" fill="#65c6bc"/>
+    <circle cx="864" cy="121" r="11" fill="#e0bd73"/>
+    <circle cx="864" cy="121" r="18" stroke="#e0bd73" stroke-opacity=".38" stroke-width="2"/>
+    <path d="M112 568h752" stroke="#d4e0e7" stroke-opacity=".2" stroke-width="1"/>
+  </g>
+</svg>
