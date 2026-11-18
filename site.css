@@ -52,3 +52,5 @@
   .footer-bottom{font-size:9px}
 }
 
+
+@media(max-width:700px){.home-about-copy{order:-1}}
