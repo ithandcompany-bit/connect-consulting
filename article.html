@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b4e">
+  <meta name="description" content="Read practical business insights from Connect-Consulting Company Ltd.">
+  <title>Article | Connect-Consulting Company Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="site.css?v=insights-editorial">
+  <style>
+    .article-breadcrumbs{padding:20px 0;color:var(--muted);font-size:11px;border-bottom:1px solid var(--line)}
+    .article-breadcrumbs a{color:var(--teal);font-weight:700}
+    .article-breadcrumbs span{margin:0 8px;color:#a5afb5}
+    .article-hero{background:#f5f7f5;padding:54px 0 44px}
+    .article-hero-inner{max-width:900px;margin:auto}
+    .article-hero .article-meta{margin-bottom:18px}
+    .article-category{display:inline-block;background:var(--navy);color:#fff;padding:7px 10px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-bottom:17px}
+    .article-hero h1{font-size:clamp(38px,5.3vw,62px);line-height:1.12;letter-spacing:-.045em}
+    .article-deck{font-size:18px;line-height:1.7;color:var(--muted);max-width:780px;margin:18px 0 0}
+    .article-cover{width:100%;height:430px;object-fit:cover;display:block;margin-top:34px;background:#e6eded}
+    .article-reading-layout{display:grid;grid-template-columns:minmax(0,760px) 250px;gap:75px;justify-content:center;padding:62px 24px 20px}
+    .article-body{min-width:0}
+    .article-body section+section{margin-top:33px}
+    .article-body h2{font-size:25px;letter-spacing:-.03em;margin:0 0 13px}
+    .article-body p{font-size:15px;line-height:1.9;color:#435565;margin:0 0 16px}
+    .article-side{align-self:start;position:sticky;top:115px;border-top:2px solid var(--teal);padding-top:17px}
+    .article-side small{display:block;color:var(--teal);font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+    .article-side strong{display:block;font:700 17px/1.4 var(--display);color:var(--navy)}
+    .article-side p{font-size:11px;line-height:1.7;color:var(--muted);margin:10px 0 0}
+    .article-sources{margin-top:45px;padding:23px 25px;background:#f5f7f5;border-left:2px solid var(--gold)}
+    .article-sources h2{font-size:17px;margin-bottom:10px}
+    .article-sources ul{padding-left:18px;margin:0}
+    .article-sources li{font-size:12px;color:var(--muted);line-height:1.7;margin:8px 0}
+    .article-sources a{color:var(--teal);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+    .article-disclaimer{font-size:11px;color:#6c7882;margin:22px auto 5px;max-width:760px;line-height:1.7}
+    .related-section{background:#f5f7f5;padding:72px 0 78px;margin-top:42px}
+    .related-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:25px}
+    .related-heading .eyebrow{margin-bottom:12px}
+    .related-heading h2{font-size:clamp(29px,3.6vw,41px)}
+    .related-heading>a{font-size:11px;color:var(--teal);font-weight:700;white-space:nowrap}
+    .related-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .related-card{background:#fff;border:1px solid var(--line);min-width:0;transition:transform .2s,box-shadow .2s}
+    .related-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .related-card img{width:100%;height:170px;object-fit:cover;display:block}
+    .related-card-copy{padding:18px}
+    .related-card-copy small{font-size:9px;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+    .related-card-copy h3{font-size:17px;line-height:1.35;margin:8px 0}
+    .related-card-copy span{font-size:11px;color:var(--teal);font-weight:700}
+    .article-cta{background:var(--navy);color:#fff;padding:66px 0;position:relative;overflow:hidden}
+    .article-cta:after{content:"";position:absolute;right:-130px;top:-280px;width:440px;height:440px;border:1px solid #ffffff15;border-radius:50%;box-shadow:0 0 0 70px #ffffff07}
+    .article-cta-inner{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:32px}
+    .article-cta .eyebrow{color:#a9d5d4;margin-bottom:12px}
+    .article-cta h2{color:#fff;font-size:clamp(31px,3.7vw,44px);max-width:640px}
+    .article-cta p{color:#d4dfe5;margin:12px 0 0;max-width:550px;font-size:13px}
+    .article-cta .button{flex-shrink:0}
+    @media(max-width:900px){.article-reading-layout{grid-template-columns:minmax(0,1fr) 210px;gap:40px}.article-cover{height:360px}}
+    @media(max-width:700px){
+      .article-breadcrumbs{font-size:10px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+      .article-hero{padding:42px 0 30px}.article-hero h1{font-size:39px}.article-deck{font-size:15px}.article-cover{height:250px;margin-top:25px}
+      .article-reading-layout{grid-template-columns:1fr;padding:40px 18px 8px;gap:28px}.article-body p{font-size:14px;line-height:1.8}.article-body h2{font-size:22px}.article-side{position:static;order:-1;background:#f5f7f5;padding:15px;border-left:2px solid var(--teal);border-top:0}
+      .article-sources{padding:19px;margin-top:32px}.related-section{padding:55px 0 60px;margin-top:25px}.related-heading{align-items:flex-start;flex-direction:column;gap:10px}.related-grid{grid-template-columns:1fr;gap:13px}.related-card{display:grid;grid-template-columns:115px minmax(0,1fr)}.related-card img{height:100%;min-height:145px}.related-card-copy{padding:14px}.related-card-copy h3{font-size:15px}
+      .article-cta{padding:54px 0}.article-cta-inner{align-items:flex-start;flex-direction:column;gap:22px}
+    }
+  </style>
+</head>
+<body>
+<div class="topline"><div class="wrap"><span>Practical insight. Purposeful progress.</span><div class="top-meta"><span>Kigali, Rwanda</span><a href="mailto:trustconnectltd@gmail.com">trustconnectltd@gmail.com</a></div></div></div>
+<header class="navbar"><div class="wrap nav-inner"><a class="brand" href="index.html" aria-label="Connect-Consulting home"><span class="brand-mark">C</span><span class="brand-name">CONNECT-CONSULTING<small>COMPANY LTD</small></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="insights.html" aria-current="page">Insights</a><a class="nav-cta" href="contact.html">Start a conversation <span class="arrow">↗</span></a></nav></div></header>
+<main id="article-root">
+  <div class="wrap"><p style="padding:50px 0;color:var(--muted)">Loading article…</p></div>
+</main>
+<footer class="site-footer"><div class="wrap footer-grid"><div class="footer-about"><a class="brand footer-brand-link" href="index.html"><span class="brand-mark">C</span><span class="brand-name">CONNECT-CONSULTING<small>COMPANY LTD</small></span></a><p>Business consulting in Kigali, Rwanda. Practical insight and purposeful progress for your organisation.</p></div><div class="footer-nav"><h3>Explore</h3><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="insights.html">Insights</a><a href="contact.html">Let’s Talk</a></div><div class="footer-nav footer-contact"><h3>Contact</h3><a href="mailto:trustconnectltd@gmail.com">trustconnectltd@gmail.com</a><a href="tel:+250795230055">+250 795 230 055</a><span>KN5 Airport Road - Gasabo<br>Kigali, Rwanda</span></div><div class="footer-newsletter"><h3>Subscribe to our newsletter</h3><p>Get practical ideas and occasional updates to support your business. No spam.</p><form class="newsletter-form"><label class="visually-hidden" for="newsletter-email">Email address</label><div class="newsletter-fields"><input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe to newsletter">Join <span aria-hidden="true">→</span></button></div></form></div></div><div class="wrap footer-bottom"><span>© <span class="year"></span> Connect-Consulting Company Ltd</span><span>Skills · Professionalism · Loyalty</span></div></footer>
+<script src="articles.js"></script><script src="article-page.js"></script>
+<script>
+const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav-links");
+toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",open);toggle.setAttribute("aria-label",open?"Close navigation":"Open navigation");toggle.textContent=open?"×":"☰";});
+nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.textContent="☰";}));
+document.querySelectorAll(".year").forEach(el=>el.textContent=new Date().getFullYear());
+document.querySelectorAll(".newsletter-form").forEach(form=>form.addEventListener("submit",event=>{event.preventDefault();const email=form.querySelector('input[type="email"]').value.trim();const subject=encodeURIComponent("Newsletter subscription"),body=encodeURIComponent("Please add me to the Connect-Consulting newsletter. My email address is "+email);window.location.href="mailto:trustconnectltd@gmail.com?subject="+subject+"&body="+body;}));
+</script>
+</body>
+</html>
