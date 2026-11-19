@@ -110,7 +110,7 @@ function filterTopics(filter){
   document.querySelectorAll(".feature-card").forEach(item=>item.hidden=filter!=="all"&&item.dataset.category!==filter);
 }
 document.querySelectorAll("[data-filter]").forEach(link=>link.addEventListener("click",event=>{event.preventDefault();filterTopics(link.dataset.filter);history.replaceState(null,"",link.getAttribute("href"));}));
-filterTopics("all");
+const initialTopic=location.hash.slice(1);filterTopics(["all",...topics].includes(initialTopic)?initialTopic:"all");window.addEventListener("hashchange",()=>{const next=location.hash.slice(1);filterTopics(["all",...topics].includes(next)?next:"all");});
 const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav-links");
 toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",open);toggle.setAttribute("aria-label",open?"Close navigation":"Open navigation");toggle.textContent=open?"×":"☰";});
 nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.textContent="☰";}));
