@@ -59,3 +59,93 @@
 
 .about-work-testimonials{padding:82px 0;background:var(--paper)}.about-work-testimonials-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:start}.about-work-column .section-head{margin:0 0 25px}.about-values-illustration{width:min(100%,760px);margin:12px 0 28px}.about-values-illustration img{display:block;width:100%;height:auto;border-radius:4px}.about-work-column .values{display:grid;grid-template-columns:1fr;gap:12px;margin:0}.about-work-column .value{padding:18px 20px}.about-testimonial-column .section-head{max-width:none;margin:0 0 23px;text-align:left}.about-testimonial-column .section-head .eyebrow{justify-content:flex-start}.about-testimonial-column .testimonial-carousel{margin-left:0;margin-right:0}.about-testimonial-column .section-head p{font-size:12px}.about-testimonial-column .testimonial-card{min-height:320px;padding:26px}.about-testimonial-column .testimonial-card blockquote{font-size:clamp(18px,2vw,22px)}.about-testimonial-column .testimonial-controls{margin-top:8px}@media(max-width:900px){.about-work-testimonials-grid{grid-template-columns:1fr;gap:42px}.about-work-column .values{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:700px){.about-work-testimonials{padding:64px 0}.about-work-testimonials-grid{gap:35px}.about-work-column .values{grid-template-columns:1fr}.about-testimonial-column .testimonial-card{min-height:285px;padding:22px}}
 .about-work-column{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,.92fr);grid-template-areas:"head head" "values image";column-gap:42px;row-gap:24px;align-items:start}.about-work-column>.section-head{grid-area:head}.about-work-column>.about-values-illustration{grid-area:image;width:100%;max-width:none;margin:0;background:transparent}.about-work-column>.about-values-illustration img{background:transparent}.about-work-column>.values{grid-area:values}@media(max-width:900px){.about-work-column{grid-template-columns:minmax(0,1fr) minmax(300px,.9fr);grid-template-areas:"head head" "values image";gap:22px 28px}.about-work-column>.values{grid-template-columns:1fr}}@media(max-width:700px){.about-work-column{grid-template-columns:1fr;grid-template-areas:"head" "values" "image";gap:0}.about-work-column>.about-values-illustration{margin:4px 0 24px}}
+
+
+/* Responsive type scale and accessible interaction states — November 2026 */
+:root{
+  --type-body:clamp(15px,0.18vw + 14px,16px);
+  --type-small:13px;
+  --type-meta:11px;
+}
+html{font-size:16px}
+body{font-size:var(--type-body);line-height:1.65}
+h1{font-size:clamp(2.35rem,4.3vw,4rem);line-height:1.08}
+h2{font-size:clamp(1.9rem,3.1vw,2.9rem);line-height:1.14}
+h3{font-size:clamp(1.15rem,1.45vw,1.45rem);line-height:1.25}
+p{line-height:1.7}
+.button{font-size:14px;min-height:50px}
+.nav-links{gap:clamp(13px,1.7vw,25px);font-size:13px}
+.nav-links a:not(.nav-cta){font-size:13px}
+.nav-links .nav-cta{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:12px 17px;background:var(--navy);color:#fff!important;
+  border:1px solid var(--navy);border-radius:3px;
+  font-size:13px;font-weight:700;line-height:1.2;
+  transition:background-color .22s ease,border-color .22s ease,color .22s ease,box-shadow .22s ease,transform .22s ease;
+}
+.nav-links .nav-cta:hover{
+  background:var(--teal);border-color:var(--teal);color:#fff!important;
+  box-shadow:0 7px 18px #167e832e;transform:translateY(-2px);
+}
+.nav-links .nav-cta:focus-visible{
+  outline:3px solid #c79a50;outline-offset:3px;
+  background:var(--teal);border-color:var(--teal);color:#fff!important;
+}
+.nav-links .nav-cta:active{transform:translateY(0);box-shadow:none}
+.page-hero h1{font-size:clamp(2.35rem,4.2vw,3.8rem);line-height:1.08}
+.page-hero p{font-size:clamp(15px,1.1vw,17px);line-height:1.7}
+.page-body .prose p,.service-detail p,.service-sticky>p,.subservice-copy p,
+.service-cta p,.contact-page>div>p,.contact-page .detail a,.contact-page .detail span,
+.field label,.field input,.field select,.field textarea,.form-note{
+  font-size:clamp(13px,.2vw + 12px,15px);
+}
+.service-detail h2{font-size:clamp(23px,2.3vw,28px)}
+.service-sticky .scope-note{font-size:12px;line-height:1.65}
+.subservice-copy h3{font-size:18px}
+.service-cta h3{font-size:clamp(20px,2vw,23px)}
+.topline{font-size:12px}
+.top-meta{gap:clamp(12px,2vw,24px)}
+.footer-about p,.footer-newsletter p,.footer-nav,.footer-nav span{font-size:12px;line-height:1.65}
+.footer-nav h3,.footer-newsletter h3{font-size:14px}
+.footer-newsletter .newsletter-fields input{font-size:13px}
+.footer-newsletter .newsletter-fields button{font-size:12px}
+.footer-bottom{font-size:11px}
+@media(min-width:1400px){
+  .wrap{width:min(1160px,calc(100% - 64px))}
+}
+@media(min-width:1600px){
+  .page-hero{padding-top:100px;padding-bottom:96px}
+  .page-hero h1{font-size:clamp(3.5rem,3.8vw,4.1rem)}
+}
+@media(min-width:701px) and (max-width:1000px){
+  .nav-links{gap:10px}
+  .nav-links a:not(.nav-cta){font-size:12px}
+  .nav-links .nav-cta{padding:10px 12px;font-size:12px}
+  .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+  .footer-about,.footer-newsletter{grid-column:1/-1}
+}
+@media(max-width:700px){
+  body{font-size:15px}
+  h1{font-size:clamp(2.2rem,8vw,3rem)}
+  h2{font-size:clamp(1.75rem,6vw,2.25rem)}
+  h3{font-size:clamp(1.1rem,4.3vw,1.3rem)}
+  .page-hero{padding:72px 0}
+  .page-hero h1{font-size:clamp(2.25rem,8.5vw,3rem)}
+  .page-hero p{font-size:15px}
+  .nav-links a:not(.nav-cta){font-size:15px}
+  .nav-links .nav-cta{font-size:14px;min-height:48px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:26px 22px}
+  .footer-about,.footer-newsletter{grid-column:1/-1}
+  .footer-nav,.footer-nav span,.footer-about p,.footer-newsletter p{font-size:12px}
+  .footer-nav h3,.footer-newsletter h3{font-size:14px}
+  .footer-bottom{font-size:11px}
+  .button{font-size:14px;min-height:48px}
+}
+@media(max-width:420px){
+  .wrap{width:calc(100% - 32px)}
+  .page-hero{padding:62px 0}
+  .page-hero h1{font-size:clamp(2.1rem,9vw,2.45rem)}
+  .footer-grid{grid-template-columns:1fr;gap:22px}
+  .footer-about,.footer-newsletter{grid-column:auto}
+  .button{padding:0 17px}
+}
