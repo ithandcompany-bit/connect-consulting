@@ -9,18 +9,23 @@
   <link rel="stylesheet" href="site.css?v=insights-editorial">
   <style>
     .insights-hero{background:#f4f6f4;padding:65px 0 48px;border-bottom:1px solid var(--line)}
-    .insights-hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:end}
+    .insights-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:58px;align-items:center}
     .insights-hero h1{font-size:clamp(46px,6.5vw,76px);max-width:720px;margin:14px 0 15px}
     .insights-hero h1 em{font-style:normal;color:var(--teal)}
     .insights-hero p{max-width:430px;color:var(--muted);font-size:15px;margin:0 0 7px}
     .insights-meta{display:flex;gap:16px;flex-wrap:wrap;margin-top:24px}
     .insights-meta span{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}
     .insights-meta span:before{content:"";display:inline-block;width:17px;height:2px;background:var(--gold);vertical-align:middle;margin-right:8px}
-    .insights-filter-wrap{background:var(--navy);position:sticky;top:82px;z-index:8}
-    .insights-filter{display:flex;gap:0;overflow-x:auto;scrollbar-width:thin}
-    .insights-filter a{display:inline-flex;align-items:center;white-space:nowrap;padding:17px 20px;color:#dce5ed;font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:700;border-right:1px solid #ffffff20;transition:.2s}
-    .insights-filter a:first-child{padding-left:0}
-    .insights-filter a:hover,.insights-filter a[aria-pressed=true]{color:#a9d5d4;background:#ffffff0c}
+    .insights-category-panel{align-self:center;background:#fff;border:1px solid var(--line);padding:22px 24px 13px;box-shadow:0 14px 34px #102b4e0b}
+    .insights-category-heading{font:800 10px var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--navy);padding-bottom:12px;border-bottom:1px solid var(--line)}
+    .insights-filter{display:flex;flex-direction:column}
+    .insights-filter a{display:grid;grid-template-columns:28px 1fr 18px;align-items:center;gap:10px;padding:13px 2px;border-bottom:1px solid var(--line);color:var(--navy);font-size:12px;font-weight:700;transition:color .2s,background .2s}
+    .insights-filter a:last-child{border-bottom:0}
+    .insights-filter a:hover,.insights-filter a[aria-pressed=true]{color:var(--teal)}
+    .insights-filter a[aria-pressed=true]{background:linear-gradient(90deg,var(--teal-light),transparent 85%);padding-left:8px}
+    .category-link-number{font:700 10px var(--display);color:var(--gold)}
+    .category-link-arrow{font-size:17px;color:var(--teal);text-align:right}
+    .insights-meta{margin-top:24px}
     .insights-section{padding:72px 0 78px}
     .insights-section.soft{background:#f5f7f5}
     .section-heading-row{display:flex;justify-content:space-between;align-items:end;gap:26px;margin-bottom:28px}
@@ -67,7 +72,7 @@
     @media(max-width:900px){.insights-hero-grid{gap:28px}.featured-grid,.article-grid{gap:14px}.feature-image{height:175px}.article-image{height:155px}}
     @media(max-width:700px){
       .insights-hero{padding:48px 0 34px}.insights-hero-grid{grid-template-columns:1fr;gap:12px}.insights-hero h1{font-size:52px}.insights-hero p{font-size:14px}
-      .insights-filter-wrap{top:70px}.insights-filter{width:100%;padding-left:18px}.insights-filter a{padding:15px 13px;font-size:9px}.insights-filter a:first-child{padding-left:13px}
+      .insights-hero-grid{grid-template-columns:1fr;gap:25px}.insights-category-panel{padding:18px 19px 10px}.insights-filter a{padding:12px 2px;font-size:11px}.insights-filter a[aria-pressed=true]{padding-left:8px}
       .insights-section{padding:55px 0 59px}.section-heading-row,.topic-section-head{align-items:flex-start;flex-direction:column;gap:10px}.section-heading-row p{font-size:12px}
       .featured-grid,.article-grid{grid-template-columns:1fr;gap:14px}.feature-card,.article-card{display:grid;grid-template-columns:118px minmax(0,1fr)}.feature-image,.article-image{height:100%;min-height:170px}.feature-copy,.article-copy{padding:14px}.feature-copy h3{font-size:16px}.article-copy h3{font-size:15px}.feature-copy p,.article-copy p{font-size:10px;line-height:1.5}.read-link{font-size:10px;margin-top:10px}.article-meta{font-size:8px;gap:6px}
       .load-more-row{margin-top:17px}.insights-cta{padding:55px 0}.insights-cta-inner{align-items:flex-start;flex-direction:column;gap:23px}
@@ -78,8 +83,7 @@
 <div class="topline"><div class="wrap"><span>Practical insight. Purposeful progress.</span><div class="top-meta"><span>Kigali, Rwanda</span><a href="mailto:trustconnectltd@gmail.com">trustconnectltd@gmail.com</a></div></div></div>
 <header class="navbar"><div class="wrap nav-inner"><a class="brand" href="index.html" aria-label="Connect-Consulting home"><span class="brand-mark">C</span><span class="brand-name">CONNECT-CONSULTING<small>COMPANY LTD</small></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="insights.html" aria-current="page">Insights</a><a class="nav-cta" href="contact.html">Start a conversation <span class="arrow">↗</span></a></nav></div></header>
 <main>
-  <section class="insights-hero"><div class="wrap insights-hero-grid"><div><div class="eyebrow">Connect-Consulting journal</div><h1>Ideas for <em>better business.</em></h1><p>Practical perspectives on business development, financial management and customer experience—written to help leaders ask better questions and make more confident decisions.</p><div class="insights-meta"><span>Business growth</span><span>Financial clarity</span><span>Customer experience</span></div></div><p>Explore recent thinking, useful frameworks and developments relevant to organisations in Rwanda and across the region.</p></div></section>
-  <div class="insights-filter-wrap"><nav class="wrap insights-filter" aria-label="Filter articles by topic"><a href="#all" data-filter="all" aria-pressed="true">All topics</a><a href="#business-development" data-filter="business-development" aria-pressed="false">Business Development</a><a href="#finance" data-filter="finance" aria-pressed="false">Finance Consultancy</a><a href="#customer-experience" data-filter="customer-experience" aria-pressed="false">Customer Experience</a></nav></div>
+  <section class="insights-hero"><div class="wrap insights-hero-grid"><div><div class="eyebrow">Connect-Consulting journal</div><h1>Ideas for <em>better business.</em></h1><p>Practical perspectives on business development, financial management and customer experience—written to help leaders ask better questions and make more confident decisions.</p><div class="insights-meta"><span>Business growth</span><span>Financial clarity</span><span>Customer experience</span></div></div><aside class="insights-category-panel" aria-label="Browse Insights categories"><div class="insights-category-heading">Browse by category</div><nav class="insights-filter" aria-label="Filter articles by topic"><a href="#coverage" data-filter="all" aria-pressed="true"><span class="category-link-number">00</span><span>All topics</span><span class="category-link-arrow">↗</span></a><a href="#business-development" data-filter="business-development" aria-pressed="false"><span class="category-link-number">01</span><span>Business Development</span><span class="category-link-arrow">→</span></a><a href="#finance" data-filter="finance" aria-pressed="false"><span class="category-link-number">02</span><span>Finance Consultancy</span><span class="category-link-arrow">→</span></a><a href="#customer-experience" data-filter="customer-experience" aria-pressed="false"><span class="category-link-number">03</span><span>Customer Experience</span><span class="category-link-arrow">→</span></a></nav></aside></div></section>
   <section class="insights-section" id="coverage"><div class="wrap"><div class="section-heading-row"><div><div class="eyebrow">A place to begin</div><h2>Explore our coverage</h2></div><p>One recent perspective from each of our three consulting areas.</p></div><div class="featured-grid" id="featured-articles" aria-live="polite"></div></div></section>
   <section class="insights-section soft topic-section" id="business-development" data-topic="business-development"><div class="wrap"><div class="topic-section-head"><div><span class="topic-number">01 / BUSINESS DEVELOPMENT</span><h2>Find and pursue the right opportunities.</h2><p>Market direction, sales discipline, partnerships and the decisions that help organisations grow.</p></div></div><div class="article-grid" data-grid="business-development"></div><div class="load-more-row"><button class="load-more" type="button" data-load-more="business-development">Load more articles <span aria-hidden="true">↓</span></button></div></div></section>
   <section class="insights-section topic-section" id="finance" data-topic="finance"><div class="wrap"><div class="topic-section-head"><div><span class="topic-number">02 / FINANCE CONSULTANCY</span><h2>Build financial clarity and resilience.</h2><p>Planning, cash flow, reporting and performance insights for more informed business decisions.</p></div></div><div class="article-grid" data-grid="finance"></div><div class="load-more-row"><button class="load-more" type="button" data-load-more="finance">Load more articles <span aria-hidden="true">↓</span></button></div></div></section>
@@ -109,8 +113,16 @@ function filterTopics(filter){
   document.querySelectorAll(".topic-section").forEach(section=>section.hidden=filter!=="all"&&section.dataset.topic!==filter);
   document.querySelectorAll(".feature-card").forEach(item=>item.hidden=filter!=="all"&&item.dataset.category!==filter);
 }
-document.querySelectorAll("[data-filter]").forEach(link=>link.addEventListener("click",event=>{event.preventDefault();filterTopics(link.dataset.filter);history.replaceState(null,"",link.getAttribute("href"));}));
-const initialTopic=location.hash.slice(1);filterTopics(["all",...topics].includes(initialTopic)?initialTopic:"all");window.addEventListener("hashchange",()=>{const next=location.hash.slice(1);filterTopics(["all",...topics].includes(next)?next:"all");});
+function navigateToTopic(filter,updateUrl=true){
+  filterTopics(filter);
+  const target=document.getElementById(filter==="all"?"coverage":filter);
+  if(updateUrl)history.replaceState(null,"",filter==="all"?"#coverage":"#"+filter);
+  if(target)target.scrollIntoView({behavior:"smooth",block:"start"});
+}
+document.querySelectorAll("[data-filter]").forEach(link=>link.addEventListener("click",event=>{event.preventDefault();navigateToTopic(link.dataset.filter);}));
+const initialTopic=location.hash.slice(1);const initialFilter=["all",...topics].includes(initialTopic)?initialTopic:"all";filterTopics(initialFilter);
+if(initialFilter!=="all")requestAnimationFrame(()=>{const target=document.getElementById(initialFilter);if(target)target.scrollIntoView({block:"start"});});
+window.addEventListener("hashchange",()=>{const next=location.hash.slice(1);filterTopics(["all",...topics].includes(next)?next:"all");});
 const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav-links");
 toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",open);toggle.setAttribute("aria-label",open?"Close navigation":"Open navigation");toggle.textContent=open?"×":"☰";});
 nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.textContent="☰";}));
