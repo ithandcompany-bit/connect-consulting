@@ -335,7 +335,34 @@
     "Pair customer responses with service information such as resolution time, repeat contacts, abandoned enquiries, delivery performance, error rates and complaint themes. If a satisfaction score falls, operational data can help locate the process that may be contributing to the change.":"Huza ibisubizo by'abakiriya n'amakuru ya serivisi nk'igihe cyo gukemura ikibazo, kongera kuvugana n'ikigo, ubusabe butarakurikiranywe, uko ibyo abakiriya bategetse bitangwa, umubare w'amakosa n'ibirego bikunda kugaruka. Niba amanota yo kunyurwa agabanutse, amakuru y'imikorere ashobora gufasha kubona uburyo bw'akazi bushobora kuba intandaro y'iyo mpinduka.",
     "Segment results carefully by service, channel or customer group where sample sizes allow. A single average can hide a serious problem affecting a smaller group.":"Gabanya ibisubizo ukurikije serivisi, inzira yakoreshejwe cyangwa itsinda ry'abakiriya aho umubare w'abatanze ibisubizo uhagije. Impuzandengo imwe ishobora guhisha ikibazo gikomeye kigira ingaruka ku itsinda rito.",
     "Assign an owner to each priority insight. Agree what change will be tested, how success will be measured and when the team will review it. Close the loop with customers when a specific issue has been resolved and share learning across teams.":"Shyiraho umuntu ushinzwe gukurikirana buri gitekerezo cy'ingenzi. Mwumvikane impinduka izageragezwa, uko intsinzi izapimwa n'igihe itsinda rizongera kuyisuzuma. Menyesha abakiriya igihe ikibazo runaka cyakemuwe kandi musangize andi matsinda amasomo mwigiye muri icyo gikorwa.",
-    "Measures are useful when they improve decisions. The goal is not to maximise a score in isolation, but to make it easier for customers to achieve what they came to do.":"Ibipimo bigira akamaro iyo bifasha gufata ibyemezo byiza. Intego si ukuzamura amanota gusa, ahubwo ni korohereza abakiriya kugera ku cyo baje gukora."
+    "Measures are useful when they improve decisions. The goal is not to maximise a score in isolation, but to make it easier for customers to achieve what they came to do.":"Ibipimo bigira akamaro iyo bifasha gufata ibyemezo byiza. Intego si ukuzamura amanota gusa, ahubwo ni korohereza abakiriya kugera ku cyo baje gukora.",
+    "We work alongside organisations to understand what matters, bring focus to complex questions and support purposeful progress.":"Dukorana n'ibigo kugira ngo dusobanukirwe iby'ingenzi, dushyire umurongo ku bibazo bikomeye kandi dushyigikire iterambere rifite intego.",
+    "We use a clear process to connect understanding with action and review.":"Dukoresha uburyo busobanutse buhuza gusobanukirwa ikibazo, kugishyira mu bikorwa no gusuzuma ibyavuyemo.",
+    "Skills":"Ubuhanga",
+    "Professionalism":"Ubunyamwuga",
+    "Loyalty":"Ubudahemuka",
+    "01 / BUSINESS DEVELOPMENT":"01 / ITERAMBERE RY'UBUCURUZI",
+    "02 / CUSTOMER EXPERIENCE":"02 / UBUNARARIBONYE BW'ABAKIRIYA",
+    "03 / FINANCE":"03 / IMARI",
+    "02 / FINANCE CONSULTANCY":"02 / UBUJYANAMA MU BY'IMARI",
+    "03 / CUSTOMER EXPERIENCE":"03 / UBUNARARIBONYE BW'ABAKIRIYA",
+    "Explore our services →":"Reba serivisi zacu →",
+    "Let’s Talk":"Tuganire",
+    "Email address":"Aderesi ya imeri",
+    "Contact Connect-Consulting":"Twandikire Connect-Consulting",
+    "Read article →":"Soma inyandiko →",
+    "19 November 2026":"19 Ugushyingo 2026",
+    "Published 28 April 2026; annual GDP and sector growth data.":"Byasohotse ku ya 28 Mata 2026; birimo amakuru ya GDP y'umwaka n'izamuka ry'inzego z'ubukungu.",
+    "Country-level economic context and recent growth updates.":"Amakuru rusange ku bukungu bw'igihugu n'ibyavuguruwe ku izamuka ryabwo.",
+    "National investment and sector context; not a forecast for any individual market.":"Amakuru rusange ku ishoramari n'inzego z'ubukungu; si iteganyamari ry'isoko runaka.",
+    "Context on Rwanda’s investment and business environment.":"Amakuru afasha gusobanukirwa ishoramari n'uko ubucuruzi buhagaze mu Rwanda.",
+    "Third edition issued February 2025; effective from periods beginning on or after 1 January 2027, with early application permitted.":"Inyandiko ya gatatu yasohotse muri Gashyantare 2025; izatangira gukurikizwa ku bihe bitangira ku ya 1 Mutarama 2027 cyangwa nyuma yayo, ariko ishobora no gukoreshwa mbere.",
+    "Recent update on a targeted amendment expected before the end of 2026.":"Amakuru mashya ku ivugururwa ryihariye riteganyijwe mbere y'uko 2026 irangira.",
+    "Survey findings on private-capital inflows across responding enterprises in Rwanda.":"Ibyavuye mu bushakashatsi ku mafaranga y'ishoramari ry'abikorera yinjiye mu bigo byatanze ibisubizo mu Rwanda.",
+    "Survey findings on service quality, loyalty, journey simplification and feedback priorities.":"Ibyavuye mu bushakashatsi ku ireme rya serivisi, ubudahemuka, koroshya urugendo rw'umukiriya n'iby'ingenzi mu bitekerezo bye.",
+    "Survey of 20,000 consumers in 14 countries and 18 industries; includes findings on customer feedback, service quality and data transparency.":"Ubushakashatsi ku baguzi 20.000 bo mu bihugu 14 no mu nzego 18; burimo ibyavuye ku bitekerezo by'abakiriya, ireme rya serivisi no gukorera mu mucyo mu gukoresha amakuru.",
+    "Discusses proactive engagement, customer-experience measures and omnichannel integration.":"Igaruka ku kwegera abakiriya mbere, ibipimo by'ubunararibonye bwabo no guhuza inzira zitandukanye zo kubakorera.",
+    "Explains the use of experience measures such as CSAT and NPS in proactive engagement.":"Isobanura ikoreshwa ry'ibipimo nka CSAT na NPS mu kunoza imikoranire n'abakiriya."
   };
 
   const originalText = new WeakMap();
@@ -397,13 +424,17 @@
     const themeButton = document.getElementById("theme-toggle");
     if (langButton) {
       langButton.textContent = language === "en" ? "EN" : "RW";
-      langButton.setAttribute("aria-label", language === "en" ? "Switch language to Kinyarwanda" : "Switch language to English");
+      langButton.setAttribute("aria-label", language === "en" ? "Switch language to Kinyarwanda" : "Hindura ururimi rube Icyongereza");
       langButton.title = language === "en" ? "Kinyarwanda" : "English";
     }
     if (themeButton) {
       themeButton.textContent = theme === "light" ? "☾" : "☀";
-      themeButton.setAttribute("aria-label", theme === "light" ? "Switch to dark theme" : "Switch to light theme");
-      themeButton.title = theme === "light" ? "Dark theme" : "Light theme";
+      themeButton.setAttribute("aria-label", language === "rw"
+        ? (theme === "light" ? "Hindura ujye mu buryo bw'umwijima" : "Hindura ujye mu buryo bw'urumuri")
+        : (theme === "light" ? "Switch to dark theme" : "Switch to light theme"));
+      themeButton.title = language === "rw"
+        ? (theme === "light" ? "Uburyo bw'umwijima" : "Uburyo bw'urumuri")
+        : (theme === "light" ? "Dark theme" : "Light theme");
     }
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.setAttribute("content", theme === "dark" ? "#0b1725" : "#102b4e");
