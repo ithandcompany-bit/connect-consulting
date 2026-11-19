@@ -389,7 +389,7 @@ window.CONNECT_ARTICLES = [
         "heading": "Make relevance useful to the customer",
         "paragraphs": [
           "Personalisation can include remembering a customer’s preferences, providing relevant product information, recognising a service history or avoiding repeated questions. It should reduce effort or improve relevance—not simply increase the number of messages a business sends.",
-          "Twilio’s 2025 State of Customer Engagement report draws on a survey of 7,640 consumers and 637 business leaders. Its findings discuss the gap between businesses’ use of personalisation and how customers experience it, as well as the importance of reliability and transparency."
+          "Qualtrics’ 2026 Consumer Experience Trends Report surveyed 20,000 consumers across 14 countries and 18 industries. It reports that 86% of consumers would share more personal data when organisations are transparent and clear about how it will be used. That does not mean customers will accept any data collection: perceived value, choice and trust remain important."
         ]
       },
       {
