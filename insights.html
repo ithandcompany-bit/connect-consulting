@@ -7,7 +7,7 @@
   <title>Insights &amp; Articles | Connect-Consulting Company Ltd</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site.css?v=bilingual-theme-20261119">
+  <link rel="stylesheet" href="site.css?v=contact-strip-controls-20261119">
   <style>
     .insights-hero{background:#f4f6f4;padding:65px 0 48px;border-bottom:1px solid var(--line)}
     .insights-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:58px;align-items:center}
@@ -165,6 +165,6 @@ nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.c
 document.querySelectorAll(".year").forEach(el=>el.textContent=new Date().getFullYear());
 document.querySelectorAll(".newsletter-form").forEach(form=>form.addEventListener("submit",event=>{event.preventDefault();const email=form.querySelector('input[type="email"]').value.trim();const subject=encodeURIComponent("Newsletter subscription"),body=encodeURIComponent("Please add me to the Connect-Consulting newsletter. My email address is "+email);window.location.href="mailto:trustconnectltd@gmail.com?subject="+subject+"&body="+body;}));
 </script>
-<script src="site-preferences.js"></script>
+<script src="site-preferences.js?v=contact-strip-controls-20261119"></script>
 </body>
 </html>
