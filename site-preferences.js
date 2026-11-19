@@ -191,13 +191,86 @@
     "Switch language to Kinyarwanda":"Hindura ururimi rube Ikinyarwanda",
     "Switch language to English":"Hindura ururimi rube Icyongereza",
     "Switch to dark theme":"Hindura ujye mu buryo bw'umwijima",
-    "Switch to light theme":"Hindura ujye mu buryo bw'urumuri"
+    "Switch to light theme":"Hindura ujye mu buryo bw'urumuri",
+    "Good work starts by listening.":"Akazi keza gatangirira ku kumva ibyo mukeneye.",
+    "Get to know the thinking behind our work.":"Menya ibitekerezo biyobora ibyo dukora.",
+    "Who we are":"Abo turi bo",
+    "Connect-Consulting Company Ltd is a Kigali-based consulting business supporting organisations across business development, finance consultancy and customer experience. We work alongside your team to understand what matters, focus effort where it can help, and move from discussion to practical next steps.":"Connect-Consulting Company Ltd ni ikigo cy'ubujyanama giherereye i Kigali, gifasha ibindi bigo mu iterambere ry'ubucuruzi, ubujyanama mu by'imari no kunoza ubunararibonye bw'abakiriya. Dukorana n'itsinda ryawe kugira ngo dusobanukirwe iby'ingenzi, dushyire imbaraga aho zikenewe kandi duhindure ibiganiro intambwe zifatika.",
+    "Every organisation has different priorities. We listen first, shape our support around your needs, and stay engaged as agreed work moves forward.":"Buri kigo kigira iby'ingenzi byacyo. Tubanza kumva, tugategura ubufasha bujyanye n'ibyo ukeneye, kandi tugakomeza gukorana nawe mu gihe ibikorwa twumvikanyeho bishyirwa mu bikorwa.",
+    "Thoughtful advice. Practical progress.":"Ubujyanama butekerejweho. Iterambere rifatika.",
+    "Our purpose & vision":"Intego n'Icyerekezo byacu",
+    "Our Mission":"Inshingano zacu",
+    "Our Vision":"Icyerekezo cyacu",
+    "How we work":"Uko dukora",
+    "Our values shape how we listen, work alongside your team and support your priorities.":"Indangagaciro zacu ziyobora uko twumva ibyo ukeneye, dukorana n'itsinda ryawe kandi tugushyigikira mu byo wimirije imbere.",
+    "We bring relevant knowledge and practical capability to the priorities agreed for each engagement.":"Tuzana ubumenyi bukenewe n'ubushobozi bufatika mu byo twemeranyije gushyira imbere muri buri bufatanye.",
+    "We communicate clearly, prepare carefully and treat your team, time and information with respect.":"Tuvugana mu buryo busobanutse, tugategura neza kandi tukubaha itsinda ryawe, igihe cyawe n'amakuru yawe.",
+    "We stay committed to your agreed priorities and work in partnership as needs evolve.":"Dukomeza kwiyemeza iby'ingenzi twemeranyijeho kandi tugakorana nawe uko ibyo ukeneye bihinduka.",
+    "Testimonials":"Ubuhamya",
+    "Illustrative placeholder":"Urugero rw'agateganyo",
+    "The conversations helped us clarify our priorities and focus on practical next steps for the business.":"Ibiganiro byadufashije gusobanura iby'ingenzi kuri twe no kwibanda ku ntambwe zifatika z'ubucuruzi.",
+    "Client name placeholder":"Izina ry'umukiriya rizashyirwamo",
+    "Business leader · placeholder":"Umuyobozi w'ubucuruzi · urugero",
+    "We valued the thoughtful questions and the care taken to understand our organisation before shaping the support.":"Twishimiye ibibazo byatekerejweho n'ubwitange bwo kubanza gusobanukirwa ikigo cyacu mbere yo gutegura ubufasha.",
+    "The support brought our business goals, customer experience and financial considerations into one clear discussion.":"Ubufasha bwahuje intego z'ubucuruzi bwacu, ubunararibonye bw'abakiriya n'ibijyanye n'imari mu kiganiro kimwe gisobanutse.",
+    "Let’s move forward":"Dukomeze dutere imbere",
+    "01 / Growth & Direction":"01 / Iterambere n'Icyerekezo",
+    "Discuss this service":"Ganira natwe kuri iyi serivisi",
+    "02 / Customer Relationships":"02 / Imikoranire n'Abakiriya",
+    "03 / Financial Strength":"03 / Imbaraga mu by'Imari",
+    "Sales Strategy Consulting":"Ubujyanama mu Ngamba zo Kugurisha",
+    "Partnership Development":"Guteza Imbere Ubufatanye",
+    "Market Research & Analysis":"Ubushakashatsi n'Isesengura ry'Isoko",
+    "Lead Generation Systems":"Uburyo bwo Kubona Abakiriya Bashya",
+    "Brand & Marketing Consultancy":"Ubujyanama ku Kirango no Kwamamaza",
+    "CX Strategy Consulting":"Ubujyanama mu Ngamba z'Ubunararibonye bw'Abakiriya",
+    "Customer Journey Mapping":"Gushushanya Urugendo rw'Umukiriya",
+    "Service Design & Optimization":"Gutegura no Kunoza Serivisi",
+    "Training & Enablement Programs":"Amahugurwa no Kongerera Abakozi Ubushobozi",
+    "Feedback & Insights Management":"Gucunga Ibitekerezo n'Amakuru y'Abakiriya",
+    "Call Center Service Quality Evaluation":"Gusuzuma Ireme rya Serivisi zo kuri Telefoni",
+    "Financial Planning & Forecasting":"Igenamigambi n'Iteganyamari",
+    "Risk & Compliance Advisory":"Ubujyanama ku Byago no Kubahiriza Amategeko",
+    "Tax Optimization Strategies":"Ingamba zo Kunoza Imitangire y'Imisoro",
+    "Profitability & Cost Analysis":"Isesengura ry'Inyungu n'Ibiciro",
+    "Corporate Investment Advisory":"Ubujyanama mu Ishoramari ry'Ibigo",
+    "Property Investment":"Ishoramari mu Mitungo Itimukanwa",
+    "01 / LISTEN":"01 / TEGĀ",
+    "02 / DESIGN":"02 / TEGURA",
+    "03 / EXECUTE":"03 / SHYIRA MU BIKORWA",
+    "04 / MEASURE":"04 / PIMA",
+    "Load more articles":"Reba izindi nyandiko",
+    "Customer experience":"Uburambe bw'abakiriya",
+    "Email":"Imeri",
+    "Phone":"Telefoni",
+    "Address":"Aderesi",
+    "Reading Rwanda’s growth signals: what business leaders should plan for next":"Gusoma ibimenyetso by'ubukungu bw'u Rwanda: ibyo abayobozi b'ibigo bakwiye guteganyiriza",
+    "National growth figures can reveal where demand is moving. The opportunity for business leaders is to turn those signals into focused market choices and practical execution.":"Imibare y'izamuka ry'ubukungu ishobora kwerekana aho isoko riri kwerekeza. Amahirwe ku bayobozi b'ibigo ni uguhindura ayo makuru amahitamo asobanutse ku isoko n'ibikorwa bifatika.",
+    "A practical growth plan for SMEs looking beyond their home market":"Gahunda ifatika yo guteza imbere ibigo bito n'ibiciriritse bishaka amasoko mashya",
+    "Regional expansion is not only a sales decision. It asks a business to test demand, understand how customers buy and prepare its operations to deliver reliably.":"Kwagura ibikorwa mu karere si icyemezo cyo kugurisha gusa. Bisaba kugenzura niba hari abakiriya, gusobanukirwa uko bagura no gutegura ibikorwa kugira ngo serivisi zitangwe neza.",
+    "A long list of prospects can create activity without creating predictable revenue. A useful pipeline shows fit, progress, ownership and the next action.":"Urutonde rurerure rw'abashobora kuba abakiriya rushobora gutuma habaho ibikorwa byinshi ariko ntirubyare amafaranga ateganyijwe. Uburyo bwiza bwo gukurikirana abakiriya bwerekana uko bahuye n'ibyo utanga, intambwe bagezeho, ubabishinzwe n'igikorwa gikurikira.",
+    "The right partnership can provide access, capability or trust. The wrong one can add cost and complexity. Start with the business outcome, not the announcement.":"Ubufatanye bukwiriye bushobora gutanga amahirwe, ubushobozi cyangwa icyizere. Ubupfuye bushobora kongera ikiguzi n'ingorane. Tangirira ku musaruro w'ubucuruzi ushaka kugeraho, aho gutangirira ku gutangaza ubufatanye.",
+    "Profit and cash are not the same. A rolling forecast helps management see when money is expected to arrive, when commitments fall due and where a gap may emerge.":"Inyungu n'amafaranga ari mu bubiko si kimwe. Iteganyamari rihora rivugururwa rifasha ubuyobozi kubona igihe amafaranga azinjirira, igihe ubwishyu bugomba gukorwa n'aho hashobora kuvuka icyuho.",
+    "The third edition of the IFRS for SMEs Accounting Standard is effective for annual periods beginning on or after 1 January 2027. Businesses should understand whether and when it applies to them.":"Igitabo cya gatatu cy'amahame ya IFRS agenewe ibigo bito n'ibiciriritse kizatangira gukurikizwa ku bihe by'ibaruramari by'umwaka bitangira ku ya 1 Mutarama 2027 cyangwa nyuma yayo. Ibigo bikwiye kumenya niba ayo mahame abireba n'igihe azatangirira kubireba.",
+    "When a business seeks external capital, the quality of its records and the clarity of its plan shape how confidently others can assess the opportunity.":"Iyo ubucuruzi bushaka igishoro kivuye hanze, ireme ry'inyandiko zabwo n'ubusobanuro bwa gahunda yabwo bifasha abandi gusuzuma ayo mahirwe bizeye.",
+    "Cost reduction is not simply about spending less. It is about understanding which costs create value, which create waste and what customers actually depend on.":"Kugabanya ikiguzi si ukugabanya amafaranga akoreshwa gusa. Ni ugusobanukirwa ibiciro byongera agaciro, ibipfushwa ubusa n'ibyo abakiriya bakeneye by'ukuri.",
+    "Collecting comments is the beginning, not the outcome. A useful feedback process acknowledges the customer, identifies the cause and changes the service where needed.":"Gukusanya ibitekerezo ni intangiriro, si wo musaruro wa nyuma. Uburyo bwiza bwo kwakira ibitekerezo bwemera ko umukiriya yatanze igitekerezo, bukamenya impamvu y'ikibazo kandi bugahindura serivisi aho bikenewe.",
+    "Relevant experiences can make interactions easier, but personalisation only works when customers understand the value and feel their information is treated responsibly.":"Serivisi zijyanye n'ibyo umukiriya akeneye zishobora koroshya imikoranire, ariko kumugenera ibimubereye bigira akamaro iyo asobanukiwe inyungu yabyo kandi akizera ko amakuru ye acungwa neza.",
+    "Customers often move between in-person, phone, messaging and digital interactions. The organisation experiences these as one relationship, so the journey should feel connected.":"Abakiriya bakunze guhinduranya inzira zo guhura n'ikigo, guhamagara, kohereza ubutumwa no gukoresha ikoranabuhanga. Ikigo kigomba kubibona nk'umubano umwe, bityo urugendo rw'umukiriya rukaba ruhujwe.",
+    "A dashboard full of scores can still leave teams unsure what to improve. Choose measures that connect customer perceptions to operational causes and next steps.":"Raporo yuzuye amanota ishobora gusiga itsinda ritazi icyo rikwiye kunoza. Hitamo ibipimo bihuza uko abakiriya babona serivisi n'impamvu z'imikorere ndetse n'intambwe zikurikira.",
+    "Connect-Consulting Company Ltd | Clarity for your next move":"Connect-Consulting Company Ltd | Icyerekezo gisobanutse cy'intambwe ikurikira",
+    "About Us | Connect-Consulting Company Ltd":"Ibyerekeye Twe | Connect-Consulting Company Ltd",
+    "Services | Connect-Consulting Company Ltd":"Serivisi | Connect-Consulting Company Ltd",
+    "Insights & Articles | Connect-Consulting Company Ltd":"Ubumenyi n'Inyandiko | Connect-Consulting Company Ltd",
+    "Let’s Talk | Connect-Consulting Company Ltd":"Tuganire | Connect-Consulting Company Ltd",
+    "Article | Connect-Consulting Company Ltd":"Inyandiko | Connect-Consulting Company Ltd"
   };
 
   const originalText = new WeakMap();
   const originalAttributes = new WeakMap();
   let language = "en";
   let theme = "light";
+  const originalDocumentTitle = document.title;
 
   function readPreference(key, fallback) {
     try { return localStorage.getItem(key) || fallback; }
@@ -267,6 +340,7 @@
     document.documentElement.lang = language === "rw" ? "rw" : "en";
     document.documentElement.dataset.theme = theme;
     translateTree(document.body, language);
+    document.title = translateValue(originalDocumentTitle, language);
     updateControls();
   }
 
