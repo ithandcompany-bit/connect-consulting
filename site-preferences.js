@@ -425,12 +425,12 @@
     translateAttributes(root, lang);
   }
   function updateControls() {
-    const langButton = document.getElementById("language-toggle");
+    const languageSelect = document.getElementById("language-select");
     const themeButton = document.getElementById("theme-toggle");
-    if (langButton) {
-      langButton.textContent = language === "en" ? "EN" : "RW";
-      langButton.setAttribute("aria-label", language === "en" ? "Switch language to Kinyarwanda" : "Hindura ururimi rube Icyongereza");
-      langButton.title = language === "en" ? "Kinyarwanda" : "English";
+    if (languageSelect) {
+      languageSelect.value = language;
+      languageSelect.setAttribute("aria-label", language === "rw" ? "Hitamo ururimi" : "Select language");
+      languageSelect.title = language === "rw" ? "Hitamo ururimi" : "Select language";
     }
     if (themeButton) {
       themeButton.textContent = theme === "light" ? "☾" : "☀";
@@ -456,8 +456,10 @@
   theme = readPreference(THEME_KEY, "light") === "dark" ? "dark" : "light";
   applyPreferences();
 
-  document.getElementById("language-toggle")?.addEventListener("click", () => {
-    language = language === "en" ? "rw" : "en";
+  document.getElementById("language-select")?.addEventListener("change", event => {
+    const selectedLanguage = event.target.value;
+    if (selectedLanguage !== "en" && selectedLanguage !== "rw") return;
+    language = selectedLanguage;
     savePreference(LANGUAGE_KEY, language);
     applyPreferences();
   });
