@@ -48,7 +48,7 @@
     '<section class="article-hero"><div class="wrap article-hero-inner">' +
       '<span class="article-category">' + esc(article.category) + "</span>" +
       '<div class="article-meta"><span>' + esc(article.date) + '</span><i class="dot"></i><span>' + esc(article.readTime) + "</span></div>" +
-      "<h1>" + esc(article.title) + "</h1><p class="article-deck">" + esc(article.excerpt) + "</p>" +
+      "<h1>" + esc(article.title) + "</h1><p class=\"article-deck\">" + esc(article.excerpt) + "</p>" +
       '<img class="article-cover" src="' + article.image + '" alt="' + esc(article.alt) + '">' +
     "</div></section>" +
     '<div class="wrap article-reading-layout"><article class="article-body">' + articleSections + sources + "</article>" +
