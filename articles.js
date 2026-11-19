@@ -180,7 +180,7 @@ window.CONNECT_ARTICLES = [
     "excerpt": "Profit and cash are not the same. A rolling forecast helps management see when money is expected to arrive, when commitments fall due and where a gap may emerge.",
     "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1100&q=85",
     "alt": "Financial records, calculator and pen on a desk",
-    "featured": true,
+    "featured": false,
     "sections": [
       {
         "heading": "Why a profitable business can still feel cash pressure",
@@ -216,7 +216,7 @@ window.CONNECT_ARTICLES = [
     "excerpt": "The third edition of the IFRS for SMEs Accounting Standard is effective for annual periods beginning on or after 1 January 2027. Businesses should understand whether and when it applies to them.",
     "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1100&q=85",
     "alt": "Accountant reviewing financial statements and notes",
-    "featured": false,
+    "featured": true,
     "sections": [
       {
         "heading": "What has changed?",
@@ -341,7 +341,7 @@ window.CONNECT_ARTICLES = [
     "excerpt": "Collecting comments is the beginning, not the outcome. A useful feedback process acknowledges the customer, identifies the cause and changes the service where needed.",
     "image": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1100&q=85",
     "alt": "Customer experience team discussing customer needs",
-    "featured": true,
+    "featured": false,
     "sections": [
       {
         "heading": "Move beyond collecting scores",
@@ -383,7 +383,7 @@ window.CONNECT_ARTICLES = [
     "excerpt": "Relevant experiences can make interactions easier, but personalisation only works when customers understand the value and feel their information is treated responsibly.",
     "image": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1100&q=85",
     "alt": "Customer-facing business team collaborating",
-    "featured": false,
+    "featured": true,
     "sections": [
       {
         "heading": "Make relevance useful to the customer",
