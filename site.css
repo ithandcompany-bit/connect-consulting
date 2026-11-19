@@ -331,3 +331,36 @@ html[data-theme="dark"] .insights-subscribe .newsletter-fields input::placeholde
   .brand-name small{font-size:8px}
   .site-pref-btn{height:33px}
 }
+
+
+/* Contact-strip language and theme controls */
+.top-meta{align-items:center;gap:clamp(9px,1.4vw,18px)}
+.top-meta .site-controls{margin-left:4px;gap:6px}
+.site-controls .language-select{
+  appearance:auto;display:inline-flex;align-items:center;height:28px;min-width:106px;
+  padding:0 8px;border:1px solid #ffffff65;border-radius:3px;
+  background:#102b4e;color:#fff;font:600 10px var(--sans);letter-spacing:0;
+  cursor:pointer;transition:background-color .2s,border-color .2s,transform .2s;
+}
+.site-controls .language-select:hover{background:#1b666d;border-color:#8bd0ca;transform:translateY(-1px)}
+.site-controls .language-select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.top-meta .theme-toggle{
+  width:30px;min-width:30px;height:28px;padding:0;border:1px solid #ffffff65;
+  border-radius:3px;background:transparent;color:#fff;font-size:17px;line-height:1;
+}
+.top-meta .theme-toggle:hover{background:#1b666d;border-color:#8bd0ca;color:#fff}
+@media(max-width:700px){
+  .topline .wrap{height:auto;min-height:39px;justify-content:flex-end;gap:0}
+  .topline .top-meta{margin-left:auto;gap:6px}
+  .topline .top-meta a{font-size:9px;white-space:nowrap}
+  .top-meta .site-controls{margin-left:3px;gap:4px}
+  .site-controls .language-select{height:27px;min-width:96px;padding:0 5px;font-size:9px}
+  .top-meta .theme-toggle{width:29px;min-width:29px;height:27px}
+}
+@media(max-width:380px){
+  .topline .wrap{min-height:37px}
+  .topline .top-meta{gap:5px}
+  .topline .top-meta a{font-size:8px}
+  .site-controls .language-select{min-width:88px;padding:0 4px;font-size:8px}
+  .top-meta .theme-toggle{width:27px;min-width:27px}
+}
