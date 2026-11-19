@@ -409,9 +409,9 @@ window.CONNECT_ARTICLES = [
     ],
     "sources": [
       {
-        "label": "Twilio — 2025 State of Customer Engagement Report",
-        "url": "https://www.twilio.com/en-us/state-of-customer-engagement",
-        "note": "Survey of 7,640 consumers and 637 business leaders; discusses personalisation, trust and engagement."
+        "label": "Qualtrics — 2026 Consumer Experience Trends Report",
+        "url": "https://www.qualtrics.com/ebooks-guides/customer-experience-trends-2026/",
+        "note": "Survey of 20,000 consumers in 14 countries and 18 industries; includes findings on customer feedback, service quality and data transparency."
       }
     ]
   },
