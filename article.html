@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site.css?v=topbar-controls-final-20261119">
+  <link rel="stylesheet" href="site.css?v=related-articles-fix-20261119">
   <style>
     .article-breadcrumbs{padding:20px 0;color:var(--muted);font-size:11px;border-bottom:1px solid var(--line)}
     .article-breadcrumbs a{color:var(--teal);font-weight:700}
@@ -214,6 +214,162 @@
       .related-card-copy{padding:14px}
       .related-card-copy small{font-size:9px}
       .related-card-copy h3{font-size:16px}
+    }
+
+
+    /* Final override for related article cards.
+       The earlier mobile rule used a narrow horizontal thumbnail layout;
+       this explicitly replaces it across the full phone breakpoint. */
+    #article-root ~ .related-section .related-grid,
+    .related-section .related-grid{
+      display:grid !important;
+      grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+      align-items:stretch;
+      gap:20px;
+      width:100%;
+      min-width:0;
+    }
+    .related-section .related-card{
+      display:flex !important;
+      flex-direction:column !important;
+      width:100%;
+      min-width:0;
+      max-width:100%;
+      height:100%;
+      overflow:hidden;
+    }
+    .related-section .related-card>a{
+      display:flex !important;
+      flex:1 1 auto;
+      flex-direction:column !important;
+      align-items:stretch;
+      width:100%;
+      min-width:0;
+      max-width:100%;
+      height:100%;
+      overflow:hidden;
+    }
+    .related-section .related-card img{
+      display:block;
+      width:100% !important;
+      max-width:100%;
+      height:clamp(150px,17vw,205px) !important;
+      min-height:0 !important;
+      flex:0 0 auto;
+      object-fit:cover;
+      object-position:center;
+    }
+    .related-section .related-card-copy{
+      display:flex !important;
+      flex:1 1 auto;
+      flex-direction:column;
+      align-items:flex-start;
+      width:100%;
+      max-width:100%;
+      min-width:0;
+      padding:19px;
+      overflow-wrap:anywhere;
+    }
+    .related-section .related-card-copy small,
+    .related-section .related-card-copy h3,
+    .related-section .related-card-copy span{
+      display:block;
+      width:100%;
+      max-width:100%;
+      min-width:0;
+      overflow-wrap:anywhere;
+      white-space:normal;
+    }
+    .related-section .related-card-copy h3{
+      font-size:clamp(16px,1.45vw,18px);
+      line-height:1.4;
+      word-break:normal;
+      hyphens:auto;
+    }
+    .related-section .related-card-copy span{
+      margin-top:auto;
+      padding-top:13px;
+    }
+
+    @media(max-width:960px){
+      .related-section .related-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+        gap:16px;
+      }
+      .related-section .related-card img{
+        height:clamp(150px,23vw,190px) !important;
+      }
+    }
+
+    @media(max-width:700px){
+      .related-section{
+        padding:48px 0 54px;
+        margin-top:28px;
+      }
+      .related-section .wrap{
+        width:min(100% - 36px,540px);
+        min-width:0;
+      }
+      .related-section .related-heading{
+        display:flex;
+        align-items:flex-start;
+        flex-direction:column;
+        gap:10px;
+        margin-bottom:20px;
+        min-width:0;
+      }
+      .related-section .related-heading h2{
+        font-size:clamp(27px,7vw,34px);
+        overflow-wrap:anywhere;
+      }
+      .related-section .related-heading>a{
+        max-width:100%;
+        white-space:normal;
+        line-height:1.5;
+      }
+      .related-section .related-grid{
+        grid-template-columns:minmax(0,1fr) !important;
+        gap:16px;
+      }
+      .related-section .related-card{
+        display:flex !important;
+        flex-direction:column !important;
+        width:100%;
+      }
+      .related-section .related-card>a{
+        display:flex !important;
+        flex-direction:column !important;
+      }
+      .related-section .related-card img{
+        width:100% !important;
+        height:clamp(175px,52vw,260px) !important;
+        min-height:0 !important;
+        aspect-ratio:auto;
+      }
+      .related-section .related-card-copy{
+        display:flex !important;
+        flex-direction:column;
+        width:100%;
+        padding:18px;
+      }
+      .related-section .related-card-copy small{font-size:10px}
+      .related-section .related-card-copy h3{
+        font-size:17px;
+        line-height:1.4;
+      }
+    }
+
+    @media(max-width:380px){
+      .related-section .wrap{
+        width:calc(100% - 32px);
+      }
+      .related-section .related-grid{gap:13px}
+      .related-section .related-card img{
+        height:clamp(155px,55vw,205px) !important;
+      }
+      .related-section .related-card-copy{padding:15px}
+      .related-section .related-card-copy small{font-size:9px}
+      .related-section .related-card-copy h3{font-size:16px}
     }
 
   </style>
