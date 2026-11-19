@@ -7,7 +7,7 @@
   <title>Insights &amp; Articles | Connect-Consulting Company Ltd</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site.css?v=topbar-controls-final-20261119">
+  <link rel="stylesheet" href="site.css?v=insights-responsive-20261119">
   <style>
     .insights-hero{background:#f4f6f4;padding:65px 0 48px;border-bottom:1px solid var(--line)}
     .insights-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:58px;align-items:center}
@@ -111,6 +111,257 @@
   .insights-filter a{font-size:12px}
 }
 @media(max-width:420px){.insights-hero h1{font-size:clamp(35px,9vw,40px)}}
+
+
+    /* Responsive article layouts: desktop, tablet and mobile */
+    .featured-grid,
+    .article-grid{
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      align-items:stretch;
+    }
+    .feature-card,
+    .article-card{
+      display:block;
+      min-width:0;
+      height:100%;
+      overflow:hidden;
+    }
+    .feature-card>a,
+    .article-card>a{
+      display:flex;
+      flex-direction:column;
+      align-items:stretch;
+      width:100%;
+      height:100%;
+      min-width:0;
+      color:inherit;
+      text-decoration:none;
+    }
+    .feature-image,
+    .article-image{
+      width:100%;
+      height:auto;
+      min-height:0;
+      aspect-ratio:16 / 9;
+      flex:0 0 auto;
+      overflow:hidden;
+    }
+    .feature-image img,
+    .article-image img{
+      display:block;
+      width:100%;
+      height:100%;
+      min-width:0;
+      object-fit:cover;
+    }
+    .feature-copy,
+    .article-copy{
+      display:flex;
+      flex:1 1 auto;
+      flex-direction:column;
+      align-items:flex-start;
+      min-width:0;
+      padding:20px;
+    }
+    .feature-copy h3,
+    .article-copy h3{
+      max-width:100%;
+      overflow-wrap:anywhere;
+      hyphens:auto;
+    }
+    .feature-copy p,
+    .article-copy p{
+      max-width:100%;
+      overflow-wrap:anywhere;
+      hyphens:auto;
+    }
+    .feature-copy .read-link,
+    .article-copy .read-link{
+      margin-top:auto;
+      padding-top:16px;
+    }
+    .article-meta{
+      max-width:100%;
+      min-width:0;
+      row-gap:5px;
+    }
+    .article-meta span{
+      min-width:0;
+      overflow-wrap:anywhere;
+    }
+    .insights-subscribe-panel{
+      grid-template-columns:minmax(0,1fr) minmax(0,.85fr);
+    }
+    .insights-subscribe-form,
+    .insights-subscribe-form form,
+    .insights-subscribe .newsletter-fields{
+      min-width:0;
+      max-width:100%;
+    }
+    .insights-subscribe .newsletter-fields input{
+      min-width:0;
+      width:100%;
+    }
+
+    @media(max-width:980px){
+      .insights-hero-grid{
+        grid-template-columns:minmax(0,1fr) minmax(245px,300px);
+        gap:28px;
+      }
+      .featured-grid,
+      .article-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:16px;
+      }
+      .feature-copy,
+      .article-copy{
+        padding:18px;
+      }
+      .feature-copy h3{font-size:18px}
+      .article-copy h3{font-size:17px}
+      .insights-subscribe-panel{
+        grid-template-columns:minmax(0,1fr) minmax(0,.9fr);
+        gap:24px;
+        padding:26px;
+      }
+    }
+
+    @media(max-width:760px){
+      .insights-hero-grid{
+        grid-template-columns:minmax(0,1fr);
+        gap:24px;
+      }
+      .insights-category-panel{
+        width:100%;
+        min-width:0;
+      }
+      .insights-filter a{
+        grid-template-columns:26px minmax(0,1fr) 18px;
+        min-width:0;
+      }
+      .section-heading-row,
+      .topic-section-head{
+        min-width:0;
+      }
+      .section-heading-row h2,
+      .topic-section-head h2{
+        max-width:100%;
+        overflow-wrap:anywhere;
+      }
+      .insights-subscribe-panel{
+        grid-template-columns:minmax(0,1fr);
+        gap:20px;
+        padding:24px;
+      }
+      .insights-cta-inner{
+        align-items:flex-start;
+        flex-direction:column;
+      }
+    }
+
+    @media(max-width:620px){
+      .insights-hero{
+        padding:42px 0 32px;
+      }
+      .insights-section{
+        padding:48px 0 52px;
+      }
+      .featured-grid,
+      .article-grid{
+        grid-template-columns:minmax(0,1fr);
+        gap:16px;
+      }
+      .feature-card,
+      .article-card{
+        display:block;
+        width:100%;
+      }
+      .feature-card>a,
+      .article-card>a{
+        display:flex;
+        flex-direction:column;
+      }
+      .feature-image,
+      .article-image{
+        width:100%;
+        height:auto;
+        min-height:0;
+        aspect-ratio:16 / 9;
+      }
+      .feature-copy,
+      .article-copy{
+        display:flex;
+        padding:18px;
+      }
+      .feature-copy h3{font-size:19px;line-height:1.32}
+      .article-copy h3{font-size:18px;line-height:1.35}
+      .feature-copy p,
+      .article-copy p{
+        font-size:13px;
+        line-height:1.65;
+      }
+      .article-meta{
+        font-size:9px;
+        gap:7px;
+      }
+      .read-link{
+        font-size:12px;
+      }
+      .section-heading-row{
+        margin-bottom:23px;
+      }
+      .topic-section-head{
+        margin-bottom:22px;
+      }
+      .load-more-row{
+        justify-content:center;
+      }
+      .load-more{
+        width:100%;
+        max-width:260px;
+      }
+      .insights-subscribe-panel{
+        padding:20px 17px;
+      }
+      .insights-subscribe .newsletter-fields{
+        width:100%;
+      }
+      .insights-subscribe .newsletter-fields button{
+        padding:0 11px;
+      }
+      .insights-bottom-cta .service-cta{
+        align-items:flex-start;
+        flex-direction:column;
+        gap:18px;
+      }
+    }
+
+    @media(max-width:380px){
+      .insights-hero h1{
+        font-size:clamp(32px,9vw,38px);
+      }
+      .insights-category-panel{
+        padding:16px 14px 8px;
+      }
+      .insights-filter a{
+        padding:11px 1px;
+        font-size:11px;
+      }
+      .feature-copy,
+      .article-copy{
+        padding:15px;
+      }
+      .feature-copy h3{font-size:17px}
+      .article-copy h3{font-size:16px}
+      .feature-copy p,
+      .article-copy p{
+        font-size:12px;
+        line-height:1.6;
+      }
+      .insights-subscribe-panel h2{
+        font-size:23px;
+      }
+    }
 
   </style>
 </head>
