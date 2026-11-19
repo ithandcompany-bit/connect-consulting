@@ -362,7 +362,12 @@
     "Survey findings on service quality, loyalty, journey simplification and feedback priorities.":"Ibyavuye mu bushakashatsi ku ireme rya serivisi, ubudahemuka, koroshya urugendo rw'umukiriya n'iby'ingenzi mu bitekerezo bye.",
     "Survey of 20,000 consumers in 14 countries and 18 industries; includes findings on customer feedback, service quality and data transparency.":"Ubushakashatsi ku baguzi 20.000 bo mu bihugu 14 no mu nzego 18; burimo ibyavuye ku bitekerezo by'abakiriya, ireme rya serivisi no gukorera mu mucyo mu gukoresha amakuru.",
     "Discusses proactive engagement, customer-experience measures and omnichannel integration.":"Igaruka ku kwegera abakiriya mbere, ibipimo by'ubunararibonye bwabo no guhuza inzira zitandukanye zo kubakorera.",
-    "Explains the use of experience measures such as CSAT and NPS in proactive engagement.":"Isobanura ikoreshwa ry'ibipimo nka CSAT na NPS mu kunoza imikoranire n'abakiriya."
+    "Explains the use of experience measures such as CSAT and NPS in proactive engagement.":"Isobanura ikoreshwa ry'ibipimo nka CSAT na NPS mu kunoza imikoranire n'abakiriya.",
+    "Skills · Professionalism · Loyalty":"Ubuhanga · Ubunyamwuga · Ubudahemuka",
+    "Listen":"Umva",
+    "Design":"Tegura",
+    "Execute":"Shyira mu bikorwa",
+    "Measure":"Pima"
   };
 
   const originalText = new WeakMap();
