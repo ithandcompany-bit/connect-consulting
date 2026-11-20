@@ -415,3 +415,44 @@ html[data-theme="dark"] .insights-subscribe .newsletter-fields input::placeholde
     height:28px;
   }
 }
+
+
+/* Readability refinements for supporting text.
+   Heading and title sizes are intentionally left unchanged. */
+body{font-size:16px;line-height:1.7}
+p{font-size:16px;line-height:1.75}
+.topline{font-size:12px}
+.nav-links a:not(.nav-cta){font-size:14px}
+.nav-links .nav-cta,.button{font-size:15px}
+.page-hero p{font-size:16px;line-height:1.75}
+.page-body .prose p,
+.service-detail p,
+.service-sticky>p,
+.subservice-copy p,
+.service-cta p,
+.contact-page>div>p,
+.contact-page .detail a,
+.contact-page .detail span,
+.field label,
+.field input,
+.field select,
+.field textarea,
+.form-note{font-size:15px;line-height:1.75}
+.service-sticky .scope-note{font-size:14px;line-height:1.7}
+.notice{font-size:14px;line-height:1.7}
+.footer-about p,
+.footer-newsletter p,
+.footer-nav,
+.footer-nav span{font-size:13px;line-height:1.75}
+.footer-bottom{font-size:12px;line-height:1.6}
+.footer-newsletter .newsletter-fields input{font-size:14px}
+.footer-newsletter .newsletter-fields button{font-size:13px}
+@media(max-width:700px){
+  body{font-size:16px}
+  p{font-size:16px;line-height:1.75}
+  .page-hero p{font-size:16px}
+  .nav-links a:not(.nav-cta){font-size:15px}
+  .nav-links .nav-cta,.button{font-size:15px}
+  .footer-nav,.footer-nav span,.footer-about p,.footer-newsletter p{font-size:13px}
+  .footer-bottom{font-size:12px}
+}
