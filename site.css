@@ -1,5 +1,5 @@
 
-    :root{--navy:#102b4e;--navy2:#173c63;--teal:#167e83;--teal-light:#e7f3f2;--gold:#c79a50;--ink:#172b3e;--muted:#5d6c79;--paper:#f8f9f7;--white:#fff;--line:#e4e9ea;--shadow:0 22px 60px #102b4e15;--sans:'DM Sans',sans-serif;--display:'Manrope',sans-serif}
+    :root{--navy:#102b4e;--navy2:#173c63;--teal:#167e83;--teal-light:#e7f3f2;--gold:#c79a50;--ink:#172b3e;--muted:#5d6c79;--paper:#f8f9f7;--white:#fff;--line:#e4e9ea;--shadow:0 22px 60px #102b4e15;--sans:'Inter',sans-serif;--display:'Manrope',sans-serif}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.65;background:var(--white)}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.eyebrow{display:flex;align-items:center;gap:11px;text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:700;color:var(--teal)}.eyebrow:before{content:"";width:25px;height:1px;background:var(--gold)}h1,h2,h3{font-family:var(--display);line-height:1.14;letter-spacing:-.045em;margin:0;color:var(--navy)}h1{font-size:clamp(46px,6vw,76px);font-weight:600}h2{font-size:clamp(33px,4vw,48px);font-weight:600}h3{font-size:21px;font-weight:700}.lead{font-size:18px;color:var(--muted);line-height:1.7}.section{padding:105px 0}.section-head{max-width:640px;margin-bottom:45px}.section-head .eyebrow{margin-bottom:18px}.section-head p{margin:17px 0 0;color:var(--muted);font-size:16px}.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 23px;border-radius:4px;font-size:13px;font-weight:700;transition:.2s ease;border:1px solid transparent}.button:hover{transform:translateY(-2px)}.button-primary{background:var(--teal);color:#fff}.button-primary:hover{background:#116a70}.button-outline{border-color:#ffffff80;color:#fff}.button-light{background:#fff;color:var(--navy);box-shadow:0 8px 24px #071e3518}.arrow{font-size:18px;line-height:1}
     .topline{background:var(--navy);color:#dce5ed;font-size:11px}.topline .wrap{height:35px;display:flex;justify-content:space-between;align-items:center}.topline a{color:#fff}.top-meta{display:flex;gap:24px}.top-meta span{opacity:.85}.navbar{height:82px;display:flex;align-items:center;background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #e9edef}.nav-inner{display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;color:var(--navy)}.brand-mark{width:41px;height:41px;border-radius:4px;background:var(--navy);display:grid;place-items:center;color:white;font-family:var(--display);font-size:20px;font-weight:700;position:relative}.brand-mark:after{content:"";position:absolute;width:9px;height:9px;background:var(--gold);border-radius:50%;right:5px;top:5px}.brand-name{font:800 15px/1.12 var(--display);letter-spacing:.015em}.brand-name small{display:block;font:600 9px var(--sans);letter-spacing:.19em;color:#748392;margin-top:5px}.nav-links{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:600;color:#425365}.nav-links a:hover{color:var(--teal)}.nav-cta{padding:12px 17px;background:var(--navy);color:white!important;border-radius:3px}.menu-toggle{display:none;border:0;background:none;color:var(--navy);font-size:26px}
     .hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;min-height:615px}.hero:before{content:"";position:absolute;inset:0 0 0 50%;background:linear-gradient(90deg,var(--navy) 0%,#102b4e55 37%,#102b4e08 100%),url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1500&q=85') center/cover}.hero:after{content:"";position:absolute;width:540px;height:540px;border:1px solid #ffffff12;border-radius:50%;right:30%;top:-260px;box-shadow:0 0 0 75px #ffffff06,0 0 0 150px #ffffff04;pointer-events:none}.hero-content{position:relative;z-index:1;max-width:650px;padding:105px 0 110px}.hero .eyebrow{color:#b4dada;margin-bottom:23px}.hero h1{color:#fff;max-width:640px}.hero h1 span{color:#a7d6d3}.hero .lead{color:#d8e0e6;max-width:540px;margin:25px 0 31px;font-size:17px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}.hero-note{display:flex;gap:13px;align-items:center;margin-top:55px;color:#d4e0e7;font-size:12px}.hero-note i{display:block;width:30px;height:1px;background:var(--gold)}.hero-note strong{color:#fff;font-weight:600}.hero-card{position:absolute;z-index:1;right:max(calc((100% - 1160px)/2),24px);bottom:39px;padding:18px 21px;background:#fff;color:var(--navy);box-shadow:var(--shadow);width:215px}.hero-card small{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:var(--teal);font-weight:700}.hero-card p{font:700 16px/1.4 var(--display);margin:7px 0 0}
@@ -447,6 +447,58 @@ p{font-size:16px;line-height:1.75}
 .footer-bottom{font-size:12px;line-height:1.6}
 .footer-newsletter .newsletter-fields input{font-size:14px}
 .footer-newsletter .newsletter-fields button{font-size:13px}
+@media(max-width:700px){
+  body{font-size:16px}
+  p{font-size:16px;line-height:1.75}
+  .page-hero p{font-size:16px}
+  .nav-links a:not(.nav-cta){font-size:15px}
+  .nav-links .nav-cta,.button{font-size:15px}
+  .footer-nav,.footer-nav span,.footer-about p,.footer-newsletter p{font-size:13px}
+  .footer-bottom{font-size:12px}
+}
+
+
+/* Final typography system: accessible reading text with a clear visual hierarchy.
+   Heading sizes and heading selectors are intentionally not changed. */
+:root{--sans:'Inter',sans-serif;--display:'Manrope',sans-serif}
+body{
+  font-family:var(--sans);
+  font-size:16px;
+  font-weight:400;
+  line-height:1.7;
+}
+p{font-size:16px;line-height:1.75}
+.topline{font-size:12px}
+.nav-links a:not(.nav-cta){font-size:14px}
+.nav-links .nav-cta,.button{font-family:var(--sans);font-size:15px}
+.eyebrow{font-size:12px;line-height:1.5}
+.page-hero p{font-size:16px;line-height:1.75}
+.page-body .prose p,
+.service-detail p,
+.service-sticky>p,
+.subservice-copy p,
+.service-cta p,
+.contact-page>div>p,
+.contact-page .detail a,
+.contact-page .detail span,
+.field label,
+.field input,
+.field select,
+.field textarea,
+.form-note{
+  font-family:var(--sans);
+  font-size:15px;
+  line-height:1.75;
+}
+.service-sticky .scope-note{font-size:14px;line-height:1.7}
+.notice{font-size:14px;line-height:1.7}
+.footer-about p,
+.footer-newsletter p,
+.footer-nav,
+.footer-nav span{font-size:13px;line-height:1.75}
+.footer-bottom{font-size:12px;line-height:1.6}
+.footer-newsletter .newsletter-fields input{font-family:var(--sans);font-size:15px}
+.footer-newsletter .newsletter-fields button{font-family:var(--sans);font-size:14px}
 @media(max-width:700px){
   body{font-size:16px}
   p{font-size:16px;line-height:1.75}
