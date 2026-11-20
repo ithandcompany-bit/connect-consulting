@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>try{document.documentElement.dataset.theme=localStorage.getItem("connect-consulting-theme")==="dark"?"dark":"light";document.documentElement.lang=localStorage.getItem("connect-consulting-language")==="rw"?"rw":"en";}catch(e){document.documentElement.dataset.theme="light";document.documentElement.lang="en";}</script>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem("connect-consulting-theme")==="dark"?"dark":"light";}catch(e){document.documentElement.dataset.theme="light";}</script>
   <meta name="theme-color" content="#102b4e">
   <meta name="description" content="Read practical business insights from Connect-Consulting Company Ltd.">
   <title>Article | Connect-Consulting Company Ltd</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site.css?v=related-articles-fix-20261119">
+  <link rel="stylesheet" href="site.css?v=theme-only-20261120">
   <style>
     .article-breadcrumbs{padding:20px 0;color:var(--muted);font-size:11px;border-bottom:1px solid var(--line)}
     .article-breadcrumbs a{color:var(--teal);font-weight:700}
@@ -375,7 +375,7 @@
   </style>
 </head>
 <body>
-<div class="topline"><div class="wrap"><span>Practical insight. Purposeful progress.</span><div class="top-meta"><span>Kigali, Rwanda</span><a href="mailto:trustconnectltd@gmail.com">trustconnectltd@gmail.com</a><div class="site-controls" aria-label="Website preferences"><select class="site-pref-btn language-select no-translate" id="language-select" aria-label="Select language" title="Select language"><option value="en">English</option><option value="rw">Kinyarwanda</option></select><button class="site-pref-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Dark theme">☾</button></div></div></div></div>
+<div class="topline"><div class="wrap"><span>Practical insight. Purposeful progress.</span><div class="top-meta"><span>Kigali, Rwanda</span><a href="mailto:trustconnectltd@gmail.com">trustconnectltd@gmail.com</a><div class="site-controls" aria-label="Appearance settings"><button class="site-pref-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Dark theme">☾</button></div></div></div></div>
 <header class="navbar"><div class="wrap nav-inner"><a class="brand" href="index.html" aria-label="Connect-Consulting home"><span class="brand-mark">C</span><span class="brand-name">CONNECT-CONSULTING<small>COMPANY LTD</small></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="insights.html" aria-current="page">Insights</a><a class="nav-cta" href="contact.html">Start a conversation <span class="arrow">↗</span></a></nav></div></header>
 <main id="article-root">
   <div class="wrap"><p style="padding:50px 0;color:var(--muted)">Loading article…</p></div>
@@ -389,6 +389,6 @@ nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.c
 document.querySelectorAll(".year").forEach(el=>el.textContent=new Date().getFullYear());
 document.querySelectorAll(".newsletter-form").forEach(form=>form.addEventListener("submit",event=>{event.preventDefault();const email=form.querySelector('input[type="email"]').value.trim();const subject=encodeURIComponent("Newsletter subscription"),body=encodeURIComponent("Please add me to the Connect-Consulting newsletter. My email address is "+email);window.location.href="mailto:trustconnectltd@gmail.com?subject="+subject+"&body="+body;}));
 </script>
-<script src="site-preferences.js?v=contact-strip-controls-20261119"></script>
+<script src="site-preferences.js?v=theme-only-20261120"></script>
 </body>
 </html>
