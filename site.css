@@ -1,5 +1,5 @@
 
-    :root{--navy:#102b4e;--navy2:#173c63;--teal:#167e83;--teal-light:#e7f3f2;--gold:#c79a50;--ink:#172b3e;--muted:#5d6c79;--paper:#f8f9f7;--white:#fff;--line:#e4e9ea;--shadow:0 22px 60px #102b4e15;--sans:'Roboto',Arial,sans-serif;--display:'Roboto',Arial,sans-serif}
+    :root{--navy:#102b4e;--navy2:#173c63;--teal:#167e83;--teal-light:#e7f3f2;--gold:#c79a50;--ink:#172b3e;--muted:#5d6c79;--paper:#f8f9f7;--white:#fff;--line:#e4e9ea;--shadow:0 22px 60px #102b4e15;--sans:'Noto Sans',Arial,sans-serif;--display:'Noto Sans',Arial,sans-serif}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.65;background:var(--white)}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.eyebrow{display:flex;align-items:center;gap:11px;text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:700;color:var(--teal)}.eyebrow:before{content:"";width:25px;height:1px;background:var(--gold)}h1,h2,h3{font-family:var(--display);line-height:1.14;letter-spacing:-.045em;margin:0;color:var(--navy)}h1{font-size:clamp(46px,6vw,76px);font-weight:600}h2{font-size:clamp(33px,4vw,48px);font-weight:600}h3{font-size:21px;font-weight:700}.lead{font-size:18px;color:var(--muted);line-height:1.7}.section{padding:105px 0}.section-head{max-width:640px;margin-bottom:45px}.section-head .eyebrow{margin-bottom:18px}.section-head p{margin:17px 0 0;color:var(--muted);font-size:16px}.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 23px;border-radius:4px;font-size:13px;font-weight:700;transition:.2s ease;border:1px solid transparent}.button:hover{transform:translateY(-2px)}.button-primary{background:var(--teal);color:#fff}.button-primary:hover{background:#116a70}.button-outline{border-color:#ffffff80;color:#fff}.button-light{background:#fff;color:var(--navy);box-shadow:0 8px 24px #071e3518}.arrow{font-size:18px;line-height:1}
     .topline{background:var(--navy);color:#dce5ed;font-size:11px}.topline .wrap{height:35px;display:flex;justify-content:space-between;align-items:center}.topline a{color:#fff}.top-meta{display:flex;gap:24px}.top-meta span{opacity:.85}.navbar{height:82px;display:flex;align-items:center;background:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #e9edef}.nav-inner{display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;color:var(--navy)}.brand-mark{width:41px;height:41px;border-radius:4px;background:var(--navy);display:grid;place-items:center;color:white;font-family:var(--display);font-size:20px;font-weight:700;position:relative}.brand-mark:after{content:"";position:absolute;width:9px;height:9px;background:var(--gold);border-radius:50%;right:5px;top:5px}.brand-name{font:800 15px/1.12 var(--display);letter-spacing:.015em}.brand-name small{display:block;font:600 9px var(--sans);letter-spacing:.19em;color:#748392;margin-top:5px}.nav-links{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:600;color:#425365}.nav-links a:hover{color:var(--teal)}.nav-cta{padding:12px 17px;background:var(--navy);color:white!important;border-radius:3px}.menu-toggle{display:none;border:0;background:none;color:var(--navy);font-size:26px}
     .hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;min-height:615px}.hero:before{content:"";position:absolute;inset:0 0 0 50%;background:linear-gradient(90deg,var(--navy) 0%,#102b4e55 37%,#102b4e08 100%),url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1500&q=85') center/cover}.hero:after{content:"";position:absolute;width:540px;height:540px;border:1px solid #ffffff12;border-radius:50%;right:30%;top:-260px;box-shadow:0 0 0 75px #ffffff06,0 0 0 150px #ffffff04;pointer-events:none}.hero-content{position:relative;z-index:1;max-width:650px;padding:105px 0 110px}.hero .eyebrow{color:#b4dada;margin-bottom:23px}.hero h1{color:#fff;max-width:640px}.hero h1 span{color:#a7d6d3}.hero .lead{color:#d8e0e6;max-width:540px;margin:25px 0 31px;font-size:17px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}.hero-note{display:flex;gap:13px;align-items:center;margin-top:55px;color:#d4e0e7;font-size:12px}.hero-note i{display:block;width:30px;height:1px;background:var(--gold)}.hero-note strong{color:#fff;font-weight:600}.hero-card{position:absolute;z-index:1;right:max(calc((100% - 1160px)/2),24px);bottom:39px;padding:18px 21px;background:#fff;color:var(--navy);box-shadow:var(--shadow);width:215px}.hero-card small{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:var(--teal);font-weight:700}.hero-card p{font:700 16px/1.4 var(--display);margin:7px 0 0}
@@ -460,7 +460,7 @@ p{font-size:16px;line-height:1.75}
 
 /* Final typography system: accessible reading text with a clear visual hierarchy.
    Heading sizes and heading selectors are intentionally not changed. */
-:root{--sans:'Roboto',Arial,sans-serif;--display:'Roboto',Arial,sans-serif}
+:root{--sans:'Noto Sans',Arial,sans-serif;--display:'Noto Sans',Arial,sans-serif}
 body{
   font-family:var(--sans);
   font-size:16px;
@@ -662,29 +662,86 @@ html[data-theme="dark"] .nav-links .nav-cta[aria-current="page"]:hover{backgroun
 }
 
 
-/* Consistent, readable sans-serif typography inspired by JW.org's restrained type hierarchy.
-   The site's own navy, teal and gold colours and page layouts remain unchanged. */
+
+/* Clear, consistent type hierarchy adapted from the JW.org reference.
+   Noto Sans is used as an accessible web-font alternative; existing brand colours/layouts remain intact. */
 html{font-size:16px;-webkit-text-size-adjust:100%}
-body{font-family:var(--sans)!important;font-size:16px!important;font-weight:400;line-height:1.65!important;letter-spacing:normal}
-h1,h2,h3,h4,h5,h6{font-family:var(--display)!important;font-weight:700!important;letter-spacing:-.02em}
-h1{font-size:clamp(2.125rem,4.1vw,3.375rem)!important;line-height:1.12!important;letter-spacing:-.035em!important}
-h2{font-size:clamp(1.625rem,2.65vw,2.25rem)!important;line-height:1.2!important;letter-spacing:-.025em!important}
-h3{font-size:clamp(1.1875rem,1.55vw,1.375rem)!important;line-height:1.3!important;letter-spacing:-.015em!important}
-h4,h5,h6{font-size:1rem!important;line-height:1.35!important}
-body p:not(.footer-about p):not(.footer-newsletter p):not(.feature-copy p):not(.article-copy p):not(.form-note):not(.subscribe-note):not(.article-disclaimer){font-family:var(--sans)!important;font-size:16px!important;font-weight:400!important;line-height:1.7!important}
-.article-body p{font-size:16px!important;line-height:1.8!important}
-.lead,.article-deck{font-size:18px!important;line-height:1.65!important}
-.button,.nav-links a,.text-link,.service-card a,.topic-copy>span{font-family:var(--sans)!important;font-weight:700!important}
-.eyebrow{font-family:var(--sans)!important;font-weight:700!important;letter-spacing:.12em}
-.article-body h2{font-size:24px!important;line-height:1.32!important}
-.subservice-copy h3,.related-card h3,.case h3,.topic-copy h3{font-size:19px!important;line-height:1.35!important}
-.footer h3,.footer-nav h3,.footer-newsletter h3{font-size:15px!important;line-height:1.35!important}
-.footer-about p,.footer-newsletter p{font-size:12px!important;line-height:1.7!important}
+body,button,input,select,textarea{
+  font-family:'Noto Sans',Arial,sans-serif!important;
+}
+body{
+  font-size:17px!important;
+  font-weight:400!important;
+  line-height:1.65!important;
+  letter-spacing:0!important;
+}
+h1,body .home-hero h1,body .page-hero h1,body .insights-hero h1,body .article-hero h1{
+  font-family:'Noto Sans',Arial,sans-serif!important;
+  font-size:clamp(30px,3vw,36px)!important;
+  font-weight:700!important;
+  line-height:1.25!important;
+  letter-spacing:-.02em!important;
+}
+h2,body .section-head h2,body .service-sticky h2,body .about-cta h2,
+body .insights-cta h2,body .article-cta h2,body .article-body h2,
+body .related-heading h2,body .insights-feature-copy h2{
+  font-family:'Noto Sans',Arial,sans-serif!important;
+  font-size:23px!important;
+  font-weight:700!important;
+  line-height:1.3!important;
+  letter-spacing:-.015em!important;
+}
+h3,body .service-card h3,body .case h3,body .topic-copy h3,body .step h3,
+body .footer h3,body .footer-nav h3,body .footer-newsletter h3,
+body .subservice-copy h3,body .purpose-card h3,body .related-card h3{
+  font-family:'Noto Sans',Arial,sans-serif!important;
+  font-size:19px!important;
+  font-weight:700!important;
+  line-height:1.35!important;
+  letter-spacing:0!important;
+}
+h4,h5,h6{
+  font-family:'Noto Sans',Arial,sans-serif!important;
+  font-size:16px!important;
+  font-weight:700!important;
+  line-height:1.35!important;
+}
+body p,body .prose p,body .article-body p{
+  font-family:'Noto Sans',Arial,sans-serif!important;
+  font-size:17px!important;
+  font-weight:400!important;
+  line-height:1.7!important;
+}
+body .lead,body .article-deck{
+  font-size:18px!important;
+  font-weight:400!important;
+  line-height:1.65!important;
+}
+body .eyebrow,body .nav-links a,body .button,body .text-link,
+body .service-card a,body .topic-copy>span{
+  font-family:'Noto Sans',Arial,sans-serif!important;
+  font-weight:700!important;
+}
+body .eyebrow{font-size:12px!important;line-height:1.4!important;letter-spacing:.1em!important}
+body .nav-links a{font-size:14px!important}
+body .button{font-size:14px!important}
+body .service-detail h2{font-size:23px!important}
+body .footer-about p,body .footer-newsletter p,body .footer-nav span{
+  font-size:12px!important;
+  line-height:1.65!important;
+}
 @media(max-width:700px){
   body{font-size:16px!important;line-height:1.65!important}
-  h1{font-size:clamp(2rem,8.5vw,2.5rem)!important;line-height:1.14!important}
-  h2{font-size:clamp(1.55rem,6.4vw,1.9rem)!important;line-height:1.22!important}
-  h3{font-size:19px!important;line-height:1.3!important}
-  body p:not(.footer-about p):not(.footer-newsletter p):not(.feature-copy p):not(.article-copy p):not(.form-note):not(.subscribe-note):not(.article-disclaimer){font-size:16px!important;line-height:1.7!important}
-  .lead,.article-deck{font-size:17px!important;line-height:1.65!important}
+  h1,body .home-hero h1,body .page-hero h1,body .insights-hero h1,body .article-hero h1{
+    font-size:28px!important;
+    line-height:1.25!important;
+  }
+  h2,body .section-head h2,body .service-sticky h2,body .about-cta h2,
+  body .insights-cta h2,body .article-cta h2,body .article-body h2,
+  body .related-heading h2,body .insights-feature-copy h2{font-size:22px!important}
+  h3,body .service-card h3,body .case h3,body .topic-copy h3,body .step h3,
+  body .footer h3,body .footer-nav h3,body .footer-newsletter h3,
+  body .subservice-copy h3,body .purpose-card h3,body .related-card h3{font-size:18px!important}
+  body p,body .prose p,body .article-body p{font-size:16px!important;line-height:1.7!important}
+  body .lead,body .article-deck{font-size:17px!important}
 }
