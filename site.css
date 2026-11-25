@@ -620,7 +620,7 @@ html[data-theme="dark"] .nav-links .nav-cta[aria-current="page"]{background:var(
 html[data-theme="dark"] .nav-links .nav-cta[aria-current="page"]:hover{background:#d7b16f!important;border-color:#d7b16f!important;color:#102b4e!important}
 
 
-/* Dark-theme menu button: white surface with a contrasting icon on compact navigation. */
+/* Dark-theme menu button: transparent surface with white hamburger lines. */
 @media(max-width:900px){
   html[data-theme="dark"] .menu-toggle{
     display:grid;
@@ -628,32 +628,35 @@ html[data-theme="dark"] .nav-links .nav-cta[aria-current="page"]:hover{backgroun
     width:42px;
     height:40px;
     padding:0;
-    color:#173c5a!important;
-    background:#fff!important;
-    border:1px solid #d7e1e8;
+    color:#fff!important;
+    background:transparent!important;
+    border:0!important;
     border-radius:4px;
     font-size:24px;
     font-weight:700;
     line-height:1;
     cursor:pointer;
-    box-shadow:0 2px 8px #00000030;
-    transition:background-color .2s,border-color .2s,color .2s,box-shadow .2s;
+    box-shadow:none!important;
+    text-shadow:0 1px 3px #00000055;
+    transition:color .2s,opacity .2s,outline-color .2s;
   }
   html[data-theme="dark"] .menu-toggle:hover{
-    color:#126d72!important;
-    background:#fff!important;
-    border-color:#69c3bd;
-    box-shadow:0 0 0 2px #54bcb633;
+    color:#fff!important;
+    background:transparent!important;
+    border-color:transparent!important;
+    box-shadow:none!important;
+    opacity:.82;
   }
   html[data-theme="dark"] .menu-toggle:focus-visible{
     outline:3px solid #d7b16f;
     outline-offset:3px;
-    color:#173c5a!important;
-    background:#fff!important;
+    color:#fff!important;
+    background:transparent!important;
   }
   html[data-theme="dark"] .menu-toggle[aria-expanded="true"]{
-    color:#126d72!important;
-    background:#fff!important;
-    border-color:#69c3bd;
+    color:#fff!important;
+    background:transparent!important;
+    border-color:transparent!important;
+    box-shadow:none!important;
   }
 }
