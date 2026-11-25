@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ithandcompany-bit.github.io/connect-consulting/sitemap.xml
