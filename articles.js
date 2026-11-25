@@ -1,5 +1,5 @@
-/* Connect-Consulting Insights editorial library.
- * Article copy is educational and was prepared for this prototype on 19 November 2026.
+/* Connect-Consulting articles editorial library.
+ * Article copy is educational and includes source links for further reading.
  * External research links are included with individual articles.
  */
 window.CONNECT_ARTICLES = [
