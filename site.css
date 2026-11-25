@@ -1130,28 +1130,8 @@ html[data-theme="dark"] .navbar .menu-toggle{
   justify-self:center;
   width:54px;
   height:54px;
-  background-image:url("images/services/service-icon-sprite.webp");
-  background-repeat:no-repeat;
-  background-size:600% 300%;
-  background-position:0% 0%;
+  object-fit:contain;
 }
-.subservice-icon[data-icon="sales-strategy"]{background-position:0% 0%}
-.subservice-icon[data-icon="partnership-development"]{background-position:20% 0%}
-.subservice-icon[data-icon="market-research"]{background-position:40% 0%}
-.subservice-icon[data-icon="lead-generation"]{background-position:60% 0%}
-.subservice-icon[data-icon="brand-marketing"]{background-position:80% 0%}
-.subservice-icon[data-icon="cx-strategy"]{background-position:100% 0%}
-.subservice-icon[data-icon="customer-journey"]{background-position:0% 50%}
-.subservice-icon[data-icon="service-design"]{background-position:20% 50%}
-.subservice-icon[data-icon="training-enablement"]{background-position:40% 50%}
-.subservice-icon[data-icon="feedback-insights"]{background-position:60% 50%}
-.subservice-icon[data-icon="call-center-quality"]{background-position:80% 50%}
-.subservice-icon[data-icon="financial-planning"]{background-position:100% 50%}
-.subservice-icon[data-icon="risk-compliance"]{background-position:0% 100%}
-.subservice-icon[data-icon="tax-optimization"]{background-position:20% 100%}
-.subservice-icon[data-icon="profitability-cost"]{background-position:40% 100%}
-.subservice-icon[data-icon="corporate-investment"]{background-position:60% 100%}
-.subservice-icon[data-icon="property-investment"]{background-position:80% 100%}
 @media(max-width:800px){
   .subservice{grid-template-columns:50px minmax(0,1fr);min-height:96px}
   .subservice-icon{width:50px;height:50px}
