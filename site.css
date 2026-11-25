@@ -618,3 +618,42 @@ body .footer-newsletter p{font-size:15px!important;line-height:1.7!important}
 
 html[data-theme="dark"] .nav-links .nav-cta[aria-current="page"]{background:var(--gold)!important;border-color:var(--gold)!important;color:#102b4e!important;box-shadow:0 0 0 2px #c79a5044}
 html[data-theme="dark"] .nav-links .nav-cta[aria-current="page"]:hover{background:#d7b16f!important;border-color:#d7b16f!important;color:#102b4e!important}
+
+
+/* Dark-theme menu button: visible whenever the compact navigation is active. */
+@media(max-width:900px){
+  html[data-theme="dark"] .menu-toggle{
+    display:grid;
+    place-items:center;
+    width:42px;
+    height:40px;
+    padding:0;
+    color:#f4f8fb!important;
+    background:#173c5a;
+    border:1px solid #52718a;
+    border-radius:4px;
+    font-size:24px;
+    font-weight:700;
+    line-height:1;
+    cursor:pointer;
+    box-shadow:0 2px 8px #00000030;
+    transition:background-color .2s,border-color .2s,color .2s,box-shadow .2s;
+  }
+  html[data-theme="dark"] .menu-toggle:hover{
+    color:#fff!important;
+    background:#167e83;
+    border-color:#69c3bd;
+    box-shadow:0 0 0 2px #54bcb633;
+  }
+  html[data-theme="dark"] .menu-toggle:focus-visible{
+    outline:3px solid #d7b16f;
+    outline-offset:3px;
+    color:#fff!important;
+    background:#167e83;
+  }
+  html[data-theme="dark"] .menu-toggle[aria-expanded="true"]{
+    color:#fff!important;
+    background:#167e83;
+    border-color:#69c3bd;
+  }
+}
