@@ -40,7 +40,7 @@
     '<article class="related-card"><a href="' + link(item) + '">' +
       '<img src="' + item.image + '" alt="' + esc(item.alt) + '" loading="lazy">' +
       '<div class="related-card-copy"><small>' + esc(item.category) + " · " + esc(item.readTime) + "</small>" +
-      "<h3>" + esc(item.title) + '</h3><span>Read article →</span></div></a></article>'
+      "<h3>" + esc(item.title) + '</h3><span>Read article <span class="arrow" aria-hidden="true">→</span></span></div></a></article>'
   ).join("");
 
   root.innerHTML =
@@ -55,6 +55,6 @@
       '<aside class="article-side"><small>Connect-Consulting perspective</small><strong>Practical insight. Purposeful progress.</strong><p>Use these ideas as a starting point for discussion. Every organisation’s context, customers and constraints are different.</p></aside>' +
     "</div>" +
     '<p class="wrap article-disclaimer">This article is for general information and discussion. It is not a substitute for professional accounting, tax, legal, investment or other regulated advice. Confirm requirements and decisions with appropriately qualified advisers in the relevant jurisdiction.</p>' +
-    (related.length ? '<section class="related-section"><div class="wrap"><div class="related-heading"><div><div class="eyebrow">Continue reading</div><h2>Related articles</h2></div><a href="insights.html">Explore all insights →</a></div><div class="related-grid">' + relatedCards + "</div></div></section>" : "") +
+    (related.length ? '<section class="related-section"><div class="wrap"><div class="related-heading"><div><div class="eyebrow">Continue reading</div><h2>Related articles</h2></div><a href="insights.html">Explore all insights <span class="arrow" aria-hidden="true">→</span></a></div><div class="related-grid">' + relatedCards + "</div></div></section>" : "") +
     '<section class="article-cta"><div class="wrap article-cta-inner"><div><div class="eyebrow">Put insight into practice</div><h2>Have a business question you would like to explore?</h2><p>Tell us about your priorities. Connect-Consulting can help you consider practical next steps across business development, finance and customer experience.</p></div><a class="button button-light" href="contact.html">Start a conversation <span class="arrow">↗</span></a></div></section>';
 })();
