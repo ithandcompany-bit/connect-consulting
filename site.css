@@ -508,3 +508,17 @@ p{font-size:16px;line-height:1.75}
   .footer-nav,.footer-nav span,.footer-about p,.footer-newsletter p{font-size:13px}
   .footer-bottom{font-size:12px}
 }
+
+
+/* Consistent arrow icon size across navigation, links, controls and buttons.
+   The 14px size matches the arrow in the newsletter Join button. */
+.arrow{
+  display:inline-block;
+  font-size:14px !important;
+  line-height:1 !important;
+  font-weight:inherit;
+  vertical-align:middle;
+}
+.testimonial-control .arrow{
+  font-size:14px !important;
+}
