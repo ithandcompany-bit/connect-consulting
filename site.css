@@ -615,3 +615,6 @@ body p:not(.footer-about p):not(.footer-newsletter p):not(.feature-copy p):not(.
 body .feature-copy p,body .article-copy p{font-size:16px!important;line-height:1.7!important}
 body .footer-about p{font-size:14px!important;line-height:1.7!important}
 body .footer-newsletter p{font-size:15px!important;line-height:1.7!important}
+
+html[data-theme="dark"] .nav-links .nav-cta[aria-current="page"]{background:var(--gold)!important;border-color:var(--gold)!important;color:#102b4e!important;box-shadow:0 0 0 2px #c79a5044}
+html[data-theme="dark"] .nav-links .nav-cta[aria-current="page"]:hover{background:#d7b16f!important;border-color:#d7b16f!important;color:#102b4e!important}
