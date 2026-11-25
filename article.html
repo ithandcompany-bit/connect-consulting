@@ -433,7 +433,7 @@ const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector("
 toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",open);toggle.setAttribute("aria-label",open?"Close navigation":"Open navigation");toggle.textContent=open?"×":"☰";});
 nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.textContent="☰";}));
 document.querySelectorAll(".year").forEach(el=>el.textContent=new Date().getFullYear());
-document.querySelectorAll(".newsletter-form").forEach(form=>form.addEventListener("submit",event=>{event.preventDefault();const email=form.querySelector('input[type="email"]').value.trim();const subject=encodeURIComponent("Newsletter subscription"),body=encodeURIComponent("Please add me to the Connect-Consulting newsletter. My email address is "+email);window.location.href="mailto:trustconnectltd@gmail.com?subject="+subject+"&body="+body;}));
+
 </script>
 <script src="site-preferences.js?v=theme-only-20261120"></script>
 </body>
