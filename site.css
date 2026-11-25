@@ -1108,3 +1108,38 @@ html[data-theme="dark"] .navbar .menu-toggle{
   body .prose p,body .article-body p{font-size:16px!important;line-height:1.7!important}
   body .lead,body .article-deck{font-size:16px!important}
 }
+
+
+/* Major-service photographs and compact sub-service emoji markers. */
+.service-major-image{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  margin:0 0 18px;
+}
+.subservice{
+  grid-template-columns:54px minmax(0,1fr);
+  min-height:102px;
+  align-items:center;
+}
+.subservice-emoji{
+  display:flex;
+  align-self:stretch;
+  align-items:center;
+  justify-content:center;
+  width:54px;
+  font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;
+  font-size:22px;
+  line-height:1;
+}
+@media(max-width:800px){
+  .subservice{grid-template-columns:50px minmax(0,1fr);min-height:96px}
+  .subservice-emoji{width:50px}
+}
+@media(max-width:700px){
+  .service-major-image{margin-bottom:15px}
+  .subservice{grid-template-columns:46px minmax(0,1fr);min-height:88px}
+  .subservice-emoji{width:46px;font-size:21px}
+}
