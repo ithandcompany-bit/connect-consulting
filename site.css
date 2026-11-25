@@ -460,7 +460,7 @@ p{font-size:16px;line-height:1.75}
 
 /* Final typography system: accessible reading text with a clear visual hierarchy.
    Heading sizes and heading selectors are intentionally not changed. */
-:root{--sans:'Inter',sans-serif;--display:'Manrope',sans-serif}
+:root{--sans:'Roboto',Arial,sans-serif;--display:'Roboto',Arial,sans-serif}
 body{
   font-family:var(--sans);
   font-size:16px;
