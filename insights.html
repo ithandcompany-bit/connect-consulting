@@ -555,7 +555,7 @@ document.querySelectorAll("[data-filter]").forEach(link=>link.addEventListener("
 const initialTopic=location.hash.slice(1);const initialFilter=["all",...topics].includes(initialTopic)?initialTopic:"all";filterTopics(initialFilter);
 if(initialFilter!=="all")requestAnimationFrame(()=>{const target=document.getElementById(initialFilter);if(target)target.scrollIntoView({block:"start"});});
 window.addEventListener("hashchange",()=>{const next=location.hash.slice(1);filterTopics(["all",...topics].includes(next)?next:"all");});
-const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav-links");
+const navbar=document.querySelector(".navbar"),toggle=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav-links");
 toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");navbar.classList.toggle('nav-open',open);toggle.setAttribute("aria-expanded",open);toggle.setAttribute("aria-label",open?"Close navigation":"Open navigation");toggle.textContent=open?"×":"☰";});
 nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");navbar.classList.remove('nav-open');toggle.setAttribute("aria-expanded","false");toggle.textContent="☰";}));
 document.querySelectorAll(".year").forEach(el=>el.textContent=new Date().getFullYear());
