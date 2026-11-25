@@ -1124,22 +1124,32 @@ html[data-theme="dark"] .navbar .menu-toggle{
   min-height:102px;
   align-items:center;
 }
-.subservice-emoji{
+.subservice-icon{
   display:flex;
   align-self:stretch;
   align-items:center;
   justify-content:center;
   width:54px;
-  font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif;
-  font-size:22px;
-  line-height:1;
+  color:var(--teal);
+}
+.subservice-icon svg{
+  display:block;
+  width:22px;
+  height:22px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
 }
 @media(max-width:800px){
   .subservice{grid-template-columns:50px minmax(0,1fr);min-height:96px}
-  .subservice-emoji{width:50px}
+  .subservice-icon{width:50px}
 }
 @media(max-width:700px){
   .service-major-image{margin-bottom:15px}
   .subservice{grid-template-columns:46px minmax(0,1fr);min-height:88px}
-  .subservice-emoji{width:46px;font-size:21px}
+  .subservice-icon{width:46px}
 }
+
+html[data-theme="dark"] .subservice-icon{color:#a9d5d4}
