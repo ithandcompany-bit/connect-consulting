@@ -89,7 +89,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="site.css?v=jw-inspired-type-20261125">
+  <link rel="stylesheet" href="site.css?v=whole-site-nav-type-20261125">
   <style>
     .article-breadcrumbs{padding:20px 0;color:var(--muted);font-size:11px;border-bottom:1px solid var(--line)}
     .article-breadcrumbs a{color:var(--teal);font-weight:700}
@@ -500,8 +500,24 @@
 </style>
 </head>
 <body>
-<div class="topline"><div class="wrap"><span>Practical insight. Purposeful progress.</span><div class="top-meta"><span>Kigali, Rwanda</span><a href="mailto:trustconnectltd@gmail.com">trustconnectltd@gmail.com</a><div class="site-controls" aria-label="Appearance settings"><button class="site-pref-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Dark theme">☾</button></div></div></div></div>
-<header class="navbar"><div class="wrap nav-inner"><a class="brand" href="index.html" aria-label="Connect-Consulting home"><span class="brand-mark">C</span><span class="brand-name">CONNECT-CONSULTING<small>COMPANY LTD</small></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">Who We Are</a><a href="services.html">What We Do</a><a href="insights.html" aria-current="page">Articles</a><a class="nav-cta" href="contact.html">Start a conversation <span class="arrow" aria-hidden="true">→</span></a></nav></div></header>
+
+<header class="navbar">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html" aria-label="Connect-Consulting home"><span class="brand-mark">C</span><span class="brand-name">CONNECT-CONSULTING<small>COMPANY LTD</small></span></a>
+    <div class="masthead-meta">
+    <span class="masthead-note">Practical insight. Purposeful progress.</span>
+    <span class="masthead-location">Kigali, Rwanda</span>
+    <a class="masthead-email" href="mailto:trustconnectltd@gmail.com">trustconnectltd@gmail.com</a>
+    <div class="site-controls" aria-label="Appearance settings"><button class="site-pref-btn theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Dark theme">☾</button></div>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  </div>
+  </div>
+  <div class="nav-band">
+    <div class="wrap nav-band-inner">
+      <nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">Who We Are</a><a href="services.html">What We Do</a><a href="insights.html" aria-current="page">Articles</a><a class="nav-cta" href="contact.html">Start a conversation <span class="arrow" aria-hidden="true">→</span></a></nav>
+    </div>
+  </div>
+</header>
 <main id="article-root">
   <div class="wrap"><p style="padding:50px 0;color:var(--muted)">Loading article…</p></div>
 </main>
@@ -509,8 +525,8 @@
 <script src="articles.js"></script><script src="article-page.js"></script>
 <script>
 const toggle=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav-links");
-toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",open);toggle.setAttribute("aria-label",open?"Close navigation":"Open navigation");toggle.textContent=open?"×":"☰";});
-nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.textContent="☰";}));
+toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");navbar.classList.toggle('nav-open',open);toggle.setAttribute("aria-expanded",open);toggle.setAttribute("aria-label",open?"Close navigation":"Open navigation");toggle.textContent=open?"×":"☰";});
+nav.querySelectorAll("a").forEach(link=>link.addEventListener("click",()=>{nav.classList.remove("open");navbar.classList.remove('nav-open');toggle.setAttribute("aria-expanded","false");toggle.textContent="☰";}));
 document.querySelectorAll(".year").forEach(el=>el.textContent=new Date().getFullYear());
 
 </script>
