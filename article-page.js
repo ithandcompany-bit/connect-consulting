@@ -6,6 +6,81 @@
   const article = list.find(item => item.slug === slug);
   const root = document.getElementById("article-root");
 
+
+  const baseUrl = "https://ithandcompany-bit.github.io/connect-consulting/";
+  const setMeta = (selector, content) => {
+    const node = document.querySelector(selector);
+    if (node) node.setAttribute("content", content);
+  };
+  const setCanonical = href => {
+    let node = document.querySelector('link[rel="canonical"]');
+    if (!node) {
+      node = document.createElement("link");
+      node.setAttribute("rel", "canonical");
+      document.head.appendChild(node);
+    }
+    node.setAttribute("href", href);
+  };
+  const setArticleMetadata = article => {
+    const articleUrl = baseUrl + "article.html?slug=" + encodeURIComponent(article.slug);
+    const imageUrl = new URL(article.image, baseUrl).href;
+    setMeta('meta[name="description"]', article.excerpt);
+    setMeta('meta[name="robots"]', "index,follow,max-image-preview:large");
+    setMeta('meta[property="og:type"]', "article");
+    setMeta('meta[property="og:title"]', article.title);
+    setMeta('meta[property="og:description"]', article.excerpt);
+    setMeta('meta[property="og:url"]', articleUrl);
+    setMeta('meta[property="og:image"]', imageUrl);
+    setMeta('meta[property="og:image:alt"]', article.alt || article.title);
+    setMeta('meta[name="twitter:title"]', article.title);
+    setMeta('meta[name="twitter:description"]', article.excerpt);
+    setMeta('meta[name="twitter:image"]', imageUrl);
+    setMeta('meta[name="twitter:image:alt"]', article.alt || article.title);
+    setCanonical(articleUrl);
+
+    const dateMatch = String(article.date || "").match(/^(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})$/);
+    const months = ["january","february","march","april","may","june","july","august","september","october","november","december"];
+    let datePublished;
+    if (dateMatch) {
+      const month = months.indexOf(dateMatch[2].toLowerCase());
+      if (month >= 0) datePublished = new Date(Date.UTC(Number(dateMatch[3]),month,Number(dateMatch[1]))).toISOString();
+    }
+    const articleBody = (article.sections || []).map(section =>
+      [section.heading,...(section.paragraphs || []),...(section.bullets || [])].join("\n")
+    ).join("\n\n");
+    const graph = [
+      {
+        "@type":"Article",
+        "mainEntityOfPage":{"@type":"WebPage","@id":articleUrl},
+        "headline":article.title,
+        "description":article.excerpt,
+        "image":[imageUrl],
+        "author":{"@type":"Organization","name":"Connect-Consulting Company Ltd"},
+        "publisher":{"@type":"Organization","name":"Connect-Consulting Company Ltd","url":baseUrl},
+        "articleSection":article.category,
+        "inLanguage":"en",
+        "articleBody":articleBody,
+        ...(datePublished ? {"datePublished":datePublished} : {})
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":baseUrl},
+          {"@type":"ListItem","position":2,"name":"Articles","item":baseUrl+"insights.html"},
+          {"@type":"ListItem","position":3,"name":article.title,"item":articleUrl}
+        ]
+      }
+    ];
+    let node = document.getElementById("article-structured-data");
+    if (!node) {
+      node = document.createElement("script");
+      node.id = "article-structured-data";
+      node.type = "application/ld+json";
+      document.head.appendChild(node);
+    }
+    node.textContent = JSON.stringify({"@context":"https://schema.org","@graph":graph});
+  };
+
   const esc = value => String(value).replace(/[&<>"']/g, char => ({
     "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
   }[char]));
@@ -13,11 +88,13 @@
 
   if (!article) {
     document.title = "Article not found | Connect-Consulting Company Ltd";
+    setMeta('meta[name="robots"]', "noindex,follow");
     root.innerHTML = '<div class="wrap" style="padding:80px 0 95px"><div class="eyebrow">Articles from Connect-Consulting</div><h1 style="margin:15px 0">We couldn’t find that article.</h1><p style="color:var(--muted);max-width:560px">The article may have moved or the link may be incomplete. Return to Articles to explore the available articles.</p><a class="button button-primary" href="insights.html" style="margin-top:15px">Back to Articles <span class="arrow">→</span></a></div>';
     return;
   }
 
   document.title = article.title + " | Connect-Consulting Company Ltd";
+  setArticleMetadata(article);
   const description = document.querySelector('meta[name="description"]');
   if (description) description.setAttribute("content", article.excerpt);
   const categoryLink = "insights.html#" + article.key;
