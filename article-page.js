@@ -1,4 +1,4 @@
-/* Renders the selected Insights article from articles.js into article.html. */
+/* Renders the selected article from articles.js into article.html. */
 (() => {
   const list = window.CONNECT_ARTICLES || [];
   const params = new URLSearchParams(window.location.search);
