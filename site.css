@@ -522,3 +522,20 @@ p{font-size:16px;line-height:1.75}
 .testimonial-control .arrow{
   font-size:14px !important;
 }
+
+
+/* Navigation CTA: exact newsletter arrow glyph, size and alignment. */
+.nav-links .nav-cta .arrow{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  margin:0;
+  padding:0;
+  font-family:var(--sans);
+  font-size:14px !important;
+  font-weight:700;
+  line-height:1 !important;
+  vertical-align:middle;
+  transform:none;
+}
