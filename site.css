@@ -575,3 +575,43 @@ p{font-size:16px;line-height:1.75}
 
 .delivery-note{margin:22px 0 0;padding:14px 18px;background:var(--teal-light);color:var(--navy);font-size:14px;line-height:1.65}
 html[data-theme="dark"] .delivery-note{background:#173b43;color:#e6edf3}
+
+
+/* Dark-theme clarity improvements. */
+html[data-theme="dark"] .about-values-illustration{
+  background:#fff;
+  border:1px solid #dbe3e8;
+  border-radius:6px;
+  padding:16px;
+  box-shadow:0 12px 28px #00000055;
+}
+html[data-theme="dark"] .about-values-illustration img{filter:none}
+html[data-theme="dark"] .nav-links a[aria-current="page"]:not(.nav-cta){
+  color:#fff!important;
+  background:#174a50;
+  border-radius:3px;
+  box-shadow:inset 0 -3px 0 var(--gold);
+  padding:8px 11px;
+  margin:-8px -11px;
+  font-weight:700;
+}
+@media(max-width:900px){
+  html[data-theme="dark"] .nav-links a[aria-current="page"]:not(.nav-cta){
+    color:#fff!important;
+    background:#174a50;
+    border-radius:3px;
+    border-bottom-color:transparent;
+    box-shadow:inset 3px 0 0 var(--gold);
+    padding:12px 10px;
+    margin:0;
+  }
+}
+
+/* Slightly larger reading text for easier scanning. */
+body p:not(.footer-about p):not(.footer-newsletter p):not(.feature-copy p):not(.article-copy p):not(.form-note):not(.subscribe-note):not(.article-disclaimer){
+  font-size:17px!important;
+  line-height:1.75!important;
+}
+body .feature-copy p,body .article-copy p{font-size:16px!important;line-height:1.7!important}
+body .footer-about p{font-size:14px!important;line-height:1.7!important}
+body .footer-newsletter p{font-size:15px!important;line-height:1.7!important}
