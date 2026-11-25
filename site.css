@@ -563,3 +563,12 @@ p{font-size:16px;line-height:1.75}
   font-size:14px !important;
   line-height:1 !important;
 }
+
+
+/* Client-approved About page values layout. */
+.about-testimonial-column .values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.about-testimonial-column .value{min-height:128px;padding:20px;background:var(--white);border:1px solid var(--line)}
+.about-testimonial-column .value b{display:block;margin-bottom:8px;color:var(--navy);font:700 15px/1.3 var(--display)}
+.about-testimonial-column .value p{margin:0;color:var(--muted);font-size:13px;line-height:1.65}
+@media(max-width:700px){.about-testimonial-column .values{grid-template-columns:1fr 1fr;gap:10px}.about-testimonial-column .value{min-height:0;padding:16px}}
+@media(max-width:420px){.about-testimonial-column .values{grid-template-columns:1fr}}
