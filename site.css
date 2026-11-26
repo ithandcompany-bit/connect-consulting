@@ -1143,3 +1143,29 @@ html[data-theme="dark"] .navbar .menu-toggle{
 }
 
 html[data-theme="dark"] .subservice-icon{color:#a9d5d4}
+
+
+/* Fix: keep individual pictorial badges at icon size inside sub-service cards.
+   This selector intentionally overrides the generic .subservice img thumbnail rule. */
+.subservice img.subservice-icon{
+  display:block;
+  width:54px;
+  height:54px;
+  min-height:0;
+  max-width:none;
+  object-fit:contain;
+  align-self:center;
+  justify-self:center;
+}
+@media(max-width:800px){
+  .subservice img.subservice-icon{
+    width:50px;
+    height:50px;
+  }
+}
+@media(max-width:700px){
+  .subservice img.subservice-icon{
+    width:46px;
+    height:46px;
+  }
+}
